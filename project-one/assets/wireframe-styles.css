@@ -1,0 +1,205 @@
+/* CHANGE all divs with self-determined height and width to have the box-sizing: border-box command to get rid of any padding or borders, and move things around back to the correct places if necessary */
+
+ body {  /* Body Div encapsulating the entire page */
+  padding: 0;  /* Grow or shrink boxes */
+  margin: 0; /* Grow or shrink space between boxes */
+}
+
+ .whole-thing {  /* Main Body div, encapsulating all the page's content */
+  width: 768px;
+  height: 1024px;
+
+  margin-left: auto;  /* Margin commands center content on page */
+  margin-right: auto;
+
+  background-color: #00FF45;  /* Bright Green */
+
+}
+
+.centering-box {  /* Large div containing all the info on the page, designed to center the page's contents on the screen */
+  width: 723px;
+  height: 1024px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #CBFDFF; /* Frosted Turquoise */
+
+}
+
+.character-and-button h1 { /* Ampersand, in div containing both the character with its analyses and button */
+  margin: 0;
+  padding: 0;
+}
+
+/* How to size and center ampersand without box shifting and resizing? */
+
+.character-and-button {  /* Div containing both ampersand (with surrounding space for analyses and arrows) and button */
+  width: 708px;
+  height: 307px;
+
+  position: relative;
+  top: 73px;
+  left: 6px;
+
+   background-color: #1985F2;  /* Medium Blue */
+}
+
+#button {  /* Div nested inside the character-and-button div, containing just the button and the text on that button */
+  width: 161px;  /* Double-check width in PSD */
+  height: 65px;
+
+  margin-top: 422px;
+  margin-left: 272px;
+
+  background-color: #FF9E4B;  /* Pumpkin Orange */
+}
+
+/* How to import PSD image for button? */
+
+.top-left-analysis {
+  width: 233px;
+  height: 77px;
+
+  margin-top: -424px;
+  margin-left: 49px;
+
+  background-color: #F2E114 /* Yellow-Gold*/
+}
+
+.bottom-left-analysis {
+  width: 229px;
+  height: 73px;
+
+  margin-top: 52px;
+  margin-left: 0px;
+
+  background-color: #F2E114 /* Yellow-Gold*/
+}
+
+.top-right-analysis {
+  width: 284px;
+  height: 63px;
+
+  margin-top: -239px;
+  margin-left: 396px;
+
+  background-color: #F2E114 /* Yellow-Gold*/
+}
+
+.middle-right-analysis {
+  width: 232px;
+  height: 63px;
+
+  margin-top: 34px;
+  margin-left: 424px;
+
+  background-color: #F2E114 /* Yellow-Gold*/
+}
+
+.bottom-right-analysis {
+  width: 236px;
+  height: 50px;
+
+  margin-top: 10px;
+  margin-left: 472px;
+
+  background-color: #F2E114 /* Yellow-Gold*/
+}
+
+.sample-characters {
+  width: 423px;
+  height: 141px;
+
+  margin-top: 73px;
+  margin-left: 171px;
+
+  background-color: #24DDFF; /* Bright Turquoise*/
+
+  font-family: "itc-benguiat", serif; /* Benguiat Pro ITC Medium Italic, 30 pts*/
+  font-weight: 500;
+  font-style: italic;
+  font-size: 40px;
+  text-transform: uppercase;
+
+/* How to center characters in their colored box? */
+
+}
+
+.body-copy {
+  width: 636px;
+  height: 226px;
+
+  margin-top: 90px;
+  margin-left: 38px;
+
+  background-color: #FF24FF; /* Bright Pink */
+}
+
+.body-copy h2 {
+  font-family: "itc-benguiat", serif; /* Benguiat Pro ITC Medium Italic, 30 pts*/
+  font-weight: 500;
+  font-style: italic;
+  font-size: 37px;
+
+  margin-bottom: 14px;
+}
+
+.body-copy p { /* Benguiat Pro ITC Book Condensed, 12 pts */
+  font-family: itc-benguiat-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+
+  margin-top: -5px;
+}
+
+
+/* Change body copy to 16-18 pixels, and resize other things accordingly */
+/* How to make the page so that when someone zooms in, the text stays at its current size? Zooming on Mac via command plus makes the type get way too big and break the bounds of its box */
+
+.picture-and-info {
+  width: 210px;
+  height: 122px;
+
+  margin-top: 31px;
+  margin-left: 38px;
+
+  background-color: #FF0000; /* Cherry Red */
+}
+
+.personal-info {
+
+  width: 105px;
+  height: 64px;
+
+  margin-left: 105px;
+  margin-top: -114px;
+
+  background-color: #520296; /* Dark Purple */
+}
+
+.personal-info h3 {
+  font-size: 12px;
+}
+/* How to readjust point size of name and details (especially the name), as well as spacing between name and personal details, without the purple rectangle moving behind them? */
+
+.personal-info h4 {
+  font-size: 10px;
+}
+
+.citations {
+  width: 445px;
+  height: 122px;
+
+  margin-left: 250px;
+  margin-top: -133px;
+
+  font-size: 9.99px;
+
+  background-color: #9C39FF; /* Lavender */
+}
+
+.citations p{
+  margin-top: -10px;
+}

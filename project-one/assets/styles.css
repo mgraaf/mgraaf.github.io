@@ -1,0 +1,318 @@
+body {  /* Body Div encapsulating the entire page */
+  padding: 0;
+
+  background-color: #00B7CC;  /* Miss Fisher Blue, the parts that get cut off in iPad view */
+}
+
+ .whole-thing {  /* Main Body div, encapsulating all the page's content */
+  width: 768px;
+  height: 1024px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #00DAF4;  /* Wardlow Parlour Blue */
+
+}
+
+.centering-box {  /* Large div containing all the info on the page, designed to center the page's contents on the screen */
+  width: 723px;
+  height: 1024px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #00DAF4;  /* Wardlow Parlour Blue */
+
+  position: absolute;
+}
+
+.character-and-button h1 { /* Ampersand, in div containing both the character with its analyses and button */
+  margin: 0;
+  padding: 0;
+
+  font-family: "itc-benguiat", serif; /* Benguait Pro ITC Medium Italic*/
+  font-weight: 500;
+  font-style: italic;
+  font-size: 380px;
+
+  text-align: center;
+
+  position: absolute;
+  top: -72px;
+  left: 185px;
+}
+
+.character-and-button {  /* Div containing both ampersand (with surrounding space for analyses and arrows) and button */
+  width: 708px;
+  height: 307px;
+
+  position: absolute;
+  top: 97px;
+  left: 30px;
+
+}
+
+#button {  /* Div nested inside the character-and-button div, containing just the button and the text on that button */
+  width: 161px;  /* Double-check width in PSD */
+  height: 65px;
+  display: inline-block;
+
+  position: absolute;
+  top: 445px;
+  left: 265px;
+
+  background-color: #FF9E4B;  /* Pumpkin Orange */
+}
+
+#button img {
+  width: 162px;
+  height: 104px;
+
+  position: absolute;
+  top: -20px;
+  left: -11px;
+}
+
+/* How to import PSD image for button? */
+
+.top-left-analysis {
+  width: 233px;
+  height: 77px;
+
+  position: absolute;
+  top: 100px;
+  left: 28px;
+
+  background-color: #F2E114 /* Yellow-Gold*/
+}
+
+.bottom-left-analysis {
+  width: 229px;
+  height: 73px;
+
+  position: absolute;
+  top: 230px;
+
+  background-color: #F2E114 /* Yellow-Gold*/
+}
+
+.top-right-analysis {
+  width: 284px;
+  height: 63px;
+
+  position: absolute;
+  top: 60px;
+  right: 28px;
+
+  background-color: #F2E114 /* Yellow-Gold*/
+}
+
+.middle-right-analysis {
+  width: 232px;
+  height: 63px;
+
+  position: absolute;
+  top: 172px;
+  right: 45px;
+
+  background-color: #F2E114 /* Yellow-Gold*/
+}
+
+.bottom-right-analysis {
+  width: 236px;
+  height: 50px;
+
+  position: absolute;
+  top: 250px;
+  right: 1px;
+
+  background-color: #F2E114 /* Yellow-Gold*/
+}
+
+.sample-characters {
+  width: 423px;
+  height: 141px;
+
+  position: absolute;
+  left: 171px;
+  top: 355px;
+
+  font-family: "itc-benguiat", serif; /* Benguiat Pro ITC Medium Italic, 30 pts*/
+  font-weight: 500;
+  font-style: italic;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.body-copy {
+  width: 636px;
+  height: 226px;
+
+  margin-top: 608px;
+  margin-left: 62px;
+
+}
+
+.body-copy h2 {
+  font-family: "itc-benguiat", serif; /* Benguiat Pro ITC Medium Italic, 30 pts*/
+  font-weight: 500;
+  font-style: italic;
+  font-size: 37px;
+
+  margin-bottom: 14px;
+}
+
+.body-copy p { /* Benguiat Pro ITC Book Condensed, 12 pts */
+  font-family: "itc-benguiat-condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+
+  margin-top: -5px;
+}
+
+/* How to make the page so that when someone zooms in, the text stays at its current size? Zooming on Mac via command plus makes the type get way too big and break the bounds of its box */
+
+.picture-and-info {
+  width: 210px;
+  height: 122px;
+
+  margin-top: 31px;
+  margin-left: 38px;
+
+}
+
+.personal-info {
+
+  width: 105px;
+  height: 64px;
+
+  margin-left: 105px;
+  margin-top: -116px;
+
+}
+
+.personal-info h3 {
+
+  font-family: "itc-benguiat", serif; /* Benguait Pro ITC Medium */
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+
+  margin-bottom: -7px;
+}
+
+.personal-info h4 {
+
+  font-family: "itc-benguiat", serif; /* Benguait Pro ITC Medium */
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10px;
+
+  margin-bottom: -5px;
+}
+
+.personal-info p {
+  font-family: "itc-benguiat", serif; /* Benguait Pro ITC Medium */
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10px;
+}
+
+.citations {
+  width: 445px;
+  height: 122px;
+
+  margin-left: 250px;
+  margin-top: -133px;
+
+}
+
+.citations h3 {
+  font-family: "itc-benguiat", serif; /* Benguait Pro ITC Medium */
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.citations p{
+  font-family: itc-benguiat, serif; /* Benguait Pro ITC Book */
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+
+  margin-top: -10px; /* For spacing between lines of text */
+
+  padding-left: 22px ;
+  text-indent: -24px ;
+}
+
+
+
+/* Fonts
+
+Benguiat Pro ITC Bold
+font-family: itc-benguiat, serif;
+font-weight: 700;
+font-style: normal;
+
+Benguiat Pro ITC Bold Italic
+font-family: itc-benguiat, serif;
+font-weight: 700;
+font-style: italic;
+
+Benguiat Pro ITC Book
+font-family: itc-benguiat, serif;
+font-weight: 400;
+font-style: normal;
+
+Benguiat Pro ITC Book Italic
+font-family: itc-benguiat, serif;
+font-weight: 400;
+font-style: italic;
+
+Benguiat Pro ITC Medium
+font-family: itc-benguiat, serif;
+font-weight: 500;
+font-style: normal;
+
+Benguiat Pro ITC Medium Italic
+font-family: itc-benguiat, serif;
+font-weight: 500;
+font-style: italic;
+
+
+Benguiat Pro ITC Bold Condensed
+font-family: itc-benguiat-condensed, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Benguiat Pro ITC Bold Condensed Italic
+font-family: itc-benguiat-condensed, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+Benguiat Pro ITC Book Condensed
+font-family: itc-benguiat-condensed, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Benguiat Pro ITC Book Condensed Italic
+font-family: itc-benguiat-condensed, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Benguiat Pro ITC Medium Condensed
+font-family: itc-benguiat-condensed, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+Benguiat Pro ITC Medium Condensed Italic
+font-family: itc-benguiat-condensed, sans-serif;
+font-weight: 500;
+font-style: italic;
+
+ */
