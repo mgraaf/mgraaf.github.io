@@ -20,6 +20,11 @@
   background-color: #efefef;
 }
 
+.exercises h2 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+}
+
 .tutorials {
   width: 350px;
   height: 500px;
@@ -27,4 +32,10 @@
   margin: 5px;
   padding: 30px;
   background-color: #efefef;
+}
+
+.project-one h2 {
+  font-family: "itc-benguiat", serif; /* Benguiat Pro ITC Medium Italic */
+  font-weight: 500;
+  font-style: italic;
 }
