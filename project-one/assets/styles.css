@@ -12,7 +12,6 @@ body {  /* Body Div encapsulating the entire page */
   margin-right: auto;
 
   background-color: #00DAF4;  /* Wardlow Parlour Blue */
-
 }
 
 .centering-box {  /* Large div containing all the info on the page, designed to center the page's contents on the screen */
@@ -50,31 +49,48 @@ body {  /* Body Div encapsulating the entire page */
   position: absolute;
   top: 97px;
   left: 30px;
-
 }
 
-#button {  /* Div nested inside the character-and-button div, containing just the button and the text on that button */
-  width: 161px;  /* Double-check width in PSD */
-  height: 65px;
+#button-image {  /* Div nested inside the character-and-button div, containing just the button and the text on that button */
+  width: 162px; /* Size of div container */
+  height: 66px;
   display: inline-block;
 
-  position: absolute;
+  position: absolute; /* Position of div container */
   top: 445px;
-  left: 265px;
-
-  background-color: #FF9E4B;  /* Pumpkin Orange */
+  left: 280px;
 }
 
-#button img {
-  width: 162px;
+#button-image img { /* PSD image of button */
+  width: 162px; /* Size of button image */
   height: 104px;
 
-  position: absolute;
+  position: absolute; /* Position of button image */
   top: -20px;
   left: -11px;
 }
 
-/* How to import PSD image for button? */
+button {
+  position: absolute; /* Button Position */
+  left: 300px;
+  top: 467px;
+
+  border: none; /* Button Style and Color */
+  background-color: #E38142; /* Burnt Orange */
+  padding: 0px;
+
+  /* Button Text: Benguiat Pro ITC Medium */
+  font-family: "itc-benguiat", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: #183150; /* Navy */
+}
+
+button:hover {
+  background-color: #E38142; /* Burnt Orange */
+  color: #FFCC00 /* Gold */
+}
 
 .top-left-analysis {
   width: 233px;
@@ -144,7 +160,6 @@ body {  /* Body Div encapsulating the entire page */
   font-size: 40px;
   text-transform: uppercase;
   text-align: center;
-
 }
 
 .body-copy {
@@ -153,7 +168,6 @@ body {  /* Body Div encapsulating the entire page */
 
   margin-top: 608px;
   margin-left: 62px;
-
 }
 
 .body-copy h2 {
@@ -174,7 +188,7 @@ body {  /* Body Div encapsulating the entire page */
   margin-top: -5px;
 }
 
-/* How to make the page so that when someone zooms in, the text stays at its current size? Zooming on Mac via command plus makes the type get way too big and break the bounds of its box */
+/* TEXT SIZING STRANGENESS: How to make the page so that when someone zooms in, the text stays at its current size? Zooming on Mac via command plus makes the type get way too big and break the bounds of its box */
 
 .picture-and-info {
   width: 210px;
@@ -182,7 +196,6 @@ body {  /* Body Div encapsulating the entire page */
 
   margin-top: 31px;
   margin-left: 38px;
-
 }
 
 .personal-info {
@@ -192,7 +205,6 @@ body {  /* Body Div encapsulating the entire page */
 
   margin-left: 105px;
   margin-top: -116px;
-
 }
 
 .personal-info h3 {
@@ -228,7 +240,6 @@ body {  /* Body Div encapsulating the entire page */
 
   margin-left: 250px;
   margin-top: -133px;
-
 }
 
 .citations h3 {

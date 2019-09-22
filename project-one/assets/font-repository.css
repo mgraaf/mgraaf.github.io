@@ -1,0 +1,78 @@
+/* Font sizes: 18 for headers, 14 for body copy, 12 for */
+
+h3 {
+   font-size: 18px;
+}
+
+p {
+   font-size: 14px;
+}
+
+h5 {
+   font-size: 12px;
+}
+
+/* Fonts
+
+ Benguiat Pro ITC Bold
+ font-family: itc-benguiat, serif;
+ font-weight: 700;
+ font-style: normal;
+
+ Benguiat Pro ITC Bold Italic
+ font-family: itc-benguiat, serif;
+ font-weight: 700;
+ font-style: italic;
+
+ Benguiat Pro ITC Book
+ font-family: itc-benguiat, serif;
+ font-weight: 400;
+ font-style: normal;
+
+ Benguiat Pro ITC Book Italic
+ font-family: itc-benguiat, serif;
+ font-weight: 400;
+ font-style: italic;
+
+ Benguiat Pro ITC Medium
+ font-family: itc-benguiat, serif;
+ font-weight: 500;
+ font-style: normal;
+
+ Benguiat Pro ITC Medium Italic
+ font-family: itc-benguiat, serif;
+ font-weight: 500;
+ font-style: italic;
+
+
+ Benguiat Pro ITC Bold Condensed
+ font-family: itc-benguiat-condensed, sans-serif;
+ font-weight: 700;
+ font-style: normal;
+
+ Benguiat Pro ITC Bold Condensed Italic
+ font-family: itc-benguiat-condensed, sans-serif;
+ font-weight: 700;
+ font-style: italic;
+
+ Benguiat Pro ITC Book Condensed
+ font-family: itc-benguiat-condensed, sans-serif;
+ font-weight: 400;
+ font-style: normal;
+
+ Benguiat Pro ITC Book Condensed Italic
+ font-family: itc-benguiat-condensed, sans-serif;
+ font-weight: 400;
+ font-style: italic;
+
+ Benguiat Pro ITC Medium Condensed
+ font-family: itc-benguiat-condensed, sans-serif;
+ font-weight: 500;
+ font-style: normal;
+
+ Benguiat Pro ITC Medium Condensed Italic
+ font-family: itc-benguiat-condensed, sans-serif;
+ font-weight: 500;
+ font-style: italic;
+
+*/
