@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!-- the lang attribute on the HTML element defines the default language the page will be displayed in -->
+  <head>
+    <meta charset="utf-8">
+    <!-- A character set is like a digital alphabet for your browser. It's different from the language of your document, because it only affects how the letters themselves are displayed, not the language of the content. The default character set for most browsers doesn't accomodate special characters like ç or ö, so you have to specify a UTF-8 character encoding by adding a meta element with a charset attribute to the head of the file in which the special characters will be living. Basically, just always do it, and all the special characters will always render correctly. UTF-8 is like a universal alphabet for the internet. UTF-8 character sets also allow us to insert any character directly into an HTML document, which makes entities handy as reserved characters or for convenience when writing straight HTML code.  -->
+    <title> Links </title>
+  </head>
+  <body>
+
+    <h1> Notes </h1>
+    <p>Links and images are special because they deal with external sources. Links point users to somewhere else (another HTML page), while images pull another resource into the page. </p>
+
+    <p>Links are created with the "a" element, which stands for "anchor."</p>
+
+    <p>Attributes add meaning to the element they're attached to. In this case, the href attribute adds meaning to the anchor element by telling the anchor element where to send the user when they click the link that's wrapped in those anchor tags. Put your link into the opening anchor tag where it says href="#" (replacing the # with your link). Attributes live in the opening tag, with the attribute name first, then an =, then the "value" of the attribute in "" or '' marks. This info tells the browser the anchor element is a link, and should render it in its default blue underlined look.</p>
+
+    <h2>URL: Uniform Resource Locator</h2>
+    <p>The three different types of URLs we're dealing with today are <strong>absolute, relative, </strong>and <strong>root-relative </strong>links. These names refer to the value of the href attribute (what you put in to replace the #). </p>
+
+    <h2>Absolute Links</h2>
+    <p>Absolute links are the most detailed way to refer to something on the web. They start with the <strong>scheme</strong>, usually http:// or https://, followed by the <strong>domain</strong> of the website, then the <strong>path</strong> of the target web page. </p>
+
+    <p>You can use absolute links to refer to pages on your own site, but hard-coding the domain name everywhere can make things tricky. Usually, absolute links are used only to direct users to different websites (anywhere outside your own site). Basically, absolute links take you outside your current web sphere and over to another website's area of influence. </p>
+
+    <h2>Relative Links</h2>
+    <p>Relative links point to another file on your site, from the POV of the file you're in/editing. It's implied that the <strong>scheme</strong> and <strong>domain</strong> names are the same as the current page, so the only thing you need to supply is the third part of the equation, the <strong>path</strong>. In this case, the href attribute represents the file path to the page you want to take users to from the page you're currently on (in this case, it's the file path to the extras page from the links page). Since the extras page isn't in the same folder as the links page, we need to include the misc folder in the url: the # gets replaced with misc/extras.html</p>
+
+    <p>Each folder and file on a path is separated by a forward slash, /. So for every file you need to go deeper to get to the linked page, you'll need to add another forward-slashed section or layer to the link. </p>
+
+    <h3>Parent Folders</h3>
+    <p>The above works to refer to folders that are at the same level or below the current file, but how do you direct the link to pages that are in a directory <em>above</em> your current file? This is where you have to remember that our links are relative to the location of wherever we currently happen to be. To point the code in the right direction, we need the .. syntax. Two consecutive dots in a file path are a pointer that directs the code to the parent directory. In this case, we're telling the code, "I know extras.html is in the misc folder, go up a folder to the broader links-and-images folder and look for the links.html and images.html pages there instead."</p>
+
+    <p>When you need to navigate up through multiple directories, use multiple .. references, like this: ../../somewhere.html. Relative links are good like that because they let you move through entire folders without needing to update all the href's on your anchor elements, but it can get confusing when all your links start with lots of ..s. This is why relative links are best for referring to things in the <em>same</em> folder as your current stuff, or a standalone section of your site.</p>
+
+    <h2>Root-Relative Links</h2>
+    <p>Root-Relative links are a lot like relative links, except instead of being relative to the current page, they're relative to <em>the 'root' of the whole site</em>. So if my site is hosted on site.com, all the root-relative URLs would be relative to site.com. Unfortunately, since this whole tutorial uses local HTML files instead of a site hosted on a server, this won't work for us here.</p>
+
+    <p>The only difference between root-relative links and relative links is that root-relative links <em>start</em> with a forward slash -- that starting / represents the root of the whole site. You can add more folders and files to the path after that starting /, just like you can with relative links. </p>
+
+    <p>Root-relative links are some of the most useful kinds of links: they're clear enough to avoid the potential confusion of relative links, but not as overly clear as absolute links. This means you'll be seeing a lot of them, especially in larger sites where it's hard to keep track of relative references. </p>
+
+    <h2>Link Targets</h2>
+    <p>Attributes alter the meaning of HTML elements, and sometimes you need to tweak more than one aspect of an element. Anchor elements, for example, also accept a "target" attribute that tells the webpage where to display the page that opens when the user clicks the link. Typically, browsers default to replacing the current page with the new one. We can use the "target" attribute to change this default and ask the browser to open the link in a new tab or window instead.The "target" attribute gets separated from the href part of the equation by a space (or a newline). See the code for the absolute link below for an example. </p>
+
+    <p>Target attributes has a few pre-defined values that carry special meaning for web browsers, but the most common one is _blank, used in the absolute link below. This specifies that the link should open in a new tab or new window.</p>
+
+    <h2>Naming Conventions</h2>
+    <p>Spaces are a bad thing in URLs, because they require special handling -- avoid them like the plague. If you try to name a .html file with spaces in it, the browser replaces those spaces with the special encoding meant to represent them: %20. Spaces aren't allowed in URLs, so the %20 is put in instead. Use hyphens instead of spaces when naming HTML files, and lowercase characters throughout for consistency. These naming conventions apply to all files on your site.</p>
+
+    <p>It's also important to note that there's a direct connection between our file/folder names, and the URL for the page they represent. THe names of the folders and files determine the names of the slugs for the web pages and are visible to the user, so you should put as much effort into naming the files as you do towards creating the content that's on or in them. </p>
+
+    <h2>Images</h2>
+    <p>Images are  defined outside the web page that renders them visible to the user. Images are included on pages with the img tag and its src attribute, which points to the image file you want to display. src is an empty element, so it doesn't need a closing tag (it is its own closing tag, basically). </p>
+
+    <p>The four main image formats used on the web are all designed to do different things.</p>
+    <ul>
+      <li><strong>JPG Images</strong> are designed to handle large color palettes without making the files enormous. This makes it a great format for photos or images with lots of gradients. BUT JPGs don't let you use things with transparent pixels. </li>
+
+      <li><strong>GIF Images</strong> are great for simple animations, but are limited in terms of color palettes, so don't use them for photos. Transparent pixels are a <em>binary option</em> for GIFs, either a yes or no thing, so you can't have semi-opaque pixels. This can make it hard to get high levels of detail pn a transparent background. Because of this, it's typically better to use a <strong>PNG Image</strong> if you don't need animation.</li>
+
+      <li><strong>PNG Images</strong> are great for anything that isn't a photo or animated (like clipart). For photos, a PNG file of the same quality would typically be bigger than its equivalent JPG. PNGs handle opacity aok, and don't have any limits regarding color palettes, so they're great for icons, techy diagrams, logos, or anything that needs to be big and high quality.</li>
+
+      <li><strong>SVG Images</strong> are vector-based, so they so they can be scaled up or down to any size without the quality going to pieces. If you tried to scale a 100X100 pixel JPG image or PNG image up to 300X300 pixels, it would get all fuzzy and pixelated, but the SVG file would keep its crisp lines and clarity. This makes SVG files great for <em>responsive design</em>. They're great for pretty much anything you'd use a PNG file for, and you should use them whenever possible. They may be vector-formatted files, but they can be used exactly like a raster image. One thing to be aware of when using SVG files, however, is their display on different browsers. To get them to display consistently across browsers, you have to convert any text fields to outlines using an image editor like Illustrator. If you have an image with a lot of text in it, this can have a big impact on file size, so PNGs would be the way to go in that case.</li>
+    </ul>
+
+    <h3>Image Dimensions</h3>
+    <p>By default, the img element uses the inherent dimensions of whatever image file you decide to call upon. So whatever size your image is, that's the size the browser will display.</p>
+
+    <p>NOTE: for pixel-based image formats, the dimensions need to be <em>twice as big as you want the image to appear for retina displays</em>. To get the pixel-based images down to the intended size of, say, 75X75, we can use the img element's width attribute. The width attribute sets an explicit dimension you want the image to show at. Just setting one of them will make the image scale proportionally, while defining both will stretch the image to fill those proportions rather than resizing the image proportionally. Dimension values for image sizes are automatically in pixels, and a unit should never be included when using the width attribute. </p>
+
+    <h2>Text Alternatives</h2>
+    <p>Adding an alt attribute to your images is best practices, because it defines a text alternative to the image. This impacts both search engines and users with text-only browsers, so anyone using text-to-speech software will be able to hear something. Basically, the alt attribute is the thing the screen reader will read for text-to-speech software. </p>
+
+    <h2>HTML Entities</h2>
+    <p>An <strong>HTML entity</strong> is a special character that can't be represented as plain text in an HTML document. This usually means it's a reserved character in HTML, or your keyboard just doesn't have a key for it. </p>
+
+    <h3>Reserved Characters</h3>
+    <p> <, >, and & are called <strong>reserved characters</strong> because they aren't allowed to be inserted into an HTML document without being encoded. This is because they have meaning in HTML syntax: the less than carrot to start a tag, the greater than carrot to close a tag, and the ampersand to set off an HTML <strong>entity</strong>.</p>
+
+    <p>Entities always start with an ampersand and end with a semicolon. In between goes a special code that the browser reads as the actual symbol. In this case, lt is interpreted as the less than sign, gt is the greater than sign, and amp is the ampersand symbol.</p>
+
+    <p>If you're a typography nerd and want to shove curly quotes into your text, use an HTML entity. </p>
+    <ul>
+      <li> &lsquo; is for a left-curving single quote, like an opening single quote mark. </li>
+      <li> &rsquo; is for a right-curving single quote, like an apostrophe.</li>
+      <li> &ldquo; is for a left-curving double quote, like an opening quotation mark. </li>
+      <li> &rdquo; is for a right-curving double quote, like a closing quotation mark. </li>
+    </ul>
+
+    <h1>Links</h1>
+    <p>This is an example about links and <a href="images.html">images</a>.</p>
+
+    <p>This particular page is about links! There are three kinds of links: </p>
+    <ul>
+      <!-- Add <li> elements here -->
+      <li>Absolute links, like to <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"> Mozilla Developer Network</a>, which is darn handy for web developers. </li>
+      <li>Relative links, like a link to our <a href="misc/extras.html">extras page</a>, which is part of our site. </li>
+      <li>Root-relative links, like to the <a href="/">homepage</a> of our site, but that won't work for us right now because this whole setup is local files instead of a site being hosted on a larger server.</li>
+    </ul>
+
+  </body>
+</html>

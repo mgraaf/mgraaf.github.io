@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Semantic HTML </title>
+  </head>
+  <body>
+    <div class="page">
+      <!-- Top-level banner section -->
+      <header>
+        <h1>Interneting is Easy! </h1>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </nav>
+      </header>
+
+      <!-- Body Copy: dummy blog post -->
+      <article class="">
+        <header>
+          <h1>Semantic HTML</h1>
+          <p>By Troy McClure. Published <time datetime='2017-1-3' 15:00-0800> January 3rd</time></p>
+        </header>
+
+        <aside class='advert'>
+            <img src='some-advert-image.png'/>
+          </aside>
+
+        <p>This is an example web page explaining HTML5 semantic markup.</p>
+
+        <section>
+          <h2>The Document Outline</h2>
+          <p>HTML5 includes several “sectioning content” elements that
+         affect the document outline.</p>
+
+         <figure>
+           <img src='semantic-elements.png'
+         alt='Diagram showing <article>, <section>, and <nav> elements'/>
+           <figcaption>New HTML5 semantic elements</figcaption>
+         </figure>
+
+         <h3>Headers</h3>
+         <p>The <code>&lt;header&gt;</code> element is one such sectioning
+         element.</p>
+
+         <h3>Footers</h3>
+         <p>And so is the <code>&lt;footer&gt;</code> element.</p>
+
+        </section>
+
+         <section>
+           <h2>Inline Semantic HTML</h2>
+           <p>The <code>&lt;time&gt;</code> element is semantic, but it’s not
+           sectioning content.</p>
+         </section>
+
+      <footer>
+        <p>This fake article was written by somebody at InternetingIsHard.com, which
+        is a pretty decent place to learn how to become a web developer. This footer is only for the containing <code>&lt;article&gt;</code> element. </p>
+        <address>
+          Please contact <a href='mailto:troymcclure@example.com'>Troy
+            McClure</a> for questions about this article.
+        </address>
+      </footer>
+
+      </article>
+
+      <aside class='sidebar'>
+        <h2>Sidebar</h2>
+        <p>Some sidebar content</p>
+        <nav>
+          <h3>HTML &amp; CSS Tutorial</h3>
+          <ul>
+            <li><a href='#'>Introduction</a></li>
+            <li><a href='#'>Basic Web Pages</a></li>
+            <li><a href='#'>etc...</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <h3>JavaScript Tutorial</h3>
+          <ul>
+            <li><a href='#'>Introduction</a></li>
+            <li><a href='#'>Hello, JavaScript</a></li>
+            <li><a href='#'>etc...</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <footer>
+      <p>&copy; 2017 InternetingIsHard.com</p>
+      </footer>
+    </div>
+
+    <h2>Notes</h2>
+    <p> <strong>Semantic HTML</strong>: the idea that all your HTML markup should convey the underlying <em>meaning</em> in the content, rather than its <em>appearance</em>. <strong>Sectioning elements</strong> are designed to be like div containers, but with clearer names and meanings/uses. Defining graphical styles with CSS is how we convey the structure of a web page to humans. By marking it up with header, article, figure, and other HTML sectioning elements, we’re able to represent those visual styles to machines, as well.</p>
+
+    <p>Each h1 element (and any other h elements, from 1 to 6) creates a new section in the document outline, and any less prominent headings that follow it are considered subsections under that top-level heading.</p>
+
+    <p>Article element: represents an independent article, should only wrap contents that cna be plucked out of the page and shown in a totally different context. Articles are like a mini web page within your document, with their own header, footer, and doc outline completely isolated from the rest of the site. A web page can have more than one article element.It's a way to merge multiple HTML files into a single document without confusing the browser. </p>
+
+    <p>Sections are like articles, they just only make sense in the context of their home doc. An outside app won't try to pull the section out of the page and display it on its own. They're clear ways to define sections in a doc outline. Section elements tell the doc to define its outline based on the nesting structure of the section elements, rather than other things. So each section can have its own set of heading levels independent from the rest of the page. But you shouldn’t use the <section> element to manipulate the document outline in this way because browsers, screen readers, and some search engines don’t properly interpret the effect of <section> on the document outline. Instead, always define a page’s outline via heading levels, using <section> only as a replacement for container <div>’s when appropriate. Sections should contain at least one heading so it knows what to call itself. Just use sections as descriptive div tags for implicitly defined sections of the page. </p>
+
+      <p>Nav lets you mark up navigation sections, which makes search engines happy. </p>
+
+      <p>Headers denote intro content, like the name, logo, and main navigation of the site. They're only associated with the nearest sectioning element, so you can have more than one in different places. </p>
+
+      <p>Footers come at the end of an article. They act like headers and are associated with the nearest sectioning element. The footer inside the article element is only for the contents of that article. The sec
+
+      <p>Asides remove/make things look different from the main text, like adverts. When used outside an article, an aside is associated with the page as a whole (much like header and footer). This makes it a good choice for marking up a site-wide sidebar. </p>
+
+      <p>Divs are good for basic layout purposes. When debating between a semantic element or a div element, use a div element instead. </p>
+
+      <p>The time element represents either a time of day or a calendar date. Providing a machine-readable date makes it possible for browsers to automatically link it to users’ calendars and helps search engines clearly identify specific dates. The machine-readable date is defined in the datetime attribute. An easy way to remember the date format is that it goes from largest time period to smallest: year, month, then date. Note that even though the year isn’t included in the human-readable text, this tells search engines that our article was published in 2017. It’s possible to include times and time zones inside of datetime, too. The time itself is in 24-hour format, and the -0800 is the time zone offset from GMT (in this case, -0800 represents Pacific Standard Time).</p>
+
+      <p>Address element: defines contact info by embellishing stuff with metadata</p>
+
+      <p>Last, but certainly not least, are the figure and figcaption elements. The former represents a self-contained “figure”, like a diagram, illustration, or even a code snippet. The latter is optional, and it associates a caption with its parent figure element.
+
+      A common use case for both of these is to add visible descriptions to the img elements in an article. The alt attribute is closely related to the figcaption element. alt should serve as a text replacement for the image, while figcaption is a supporting description displayed with either the image or its text-based equivalent.</p>
+
+  </body>
+</html>

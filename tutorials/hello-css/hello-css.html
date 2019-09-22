@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Hello, CSS! </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <h1>Notes</h1>
+
+    <h2>Intelligently designed HTML allows search engines to infer the structure of our content, while CSS lets us display it to humans in beautiful ways.</h2>
+
+    <ul>
+      <li>CSS: cascading style sheets that define the design of the web page, using a language separate from HTML</li>
+      <li>It's a separate language because it serves a different purpose: HTML defines the page's content, CSS defines how the content is presented to the user</li>
+      <li>CSS stylesheets are plaintext files with a .css extension</li>
+      <li>CSS rules always start with a <strong>selector</strong> defining the elements this style will be applied to, then there's the <strong>declarations block</strong> inside some curly braces, and any <strong>properties</strong> inside those braces will affect the element we're applying this style to</li>
+      <li>Stylesheets get linked to HTML pages via a line of link code in the header tag - this tells the browsers to load the stylesheet when they try to render the webpage. The link tag is meant to be in the header tag specifically because it connects to metadata defined outside of the current document</li>
+      <li>The rel attribute defines the relationship between the resource (the stylesheet) and the HTML page. Stylesheet is usually the value put in there, but there are other options. The href works the same as usual, it's just pointing to a css file this time rather than another web page. It's only through the HTML markup that the browser can find the CSS stylesheet. </li>
+      <li>CSS comments work using /* */ rather than < ! --   --> like HTML does</li>
+      <li>CSS declarations (background color, etc.) always need semicolons at the end of them!!! </li>
+      <li>Pixels are the typical unit of measurement used in stylesheets. There's also the <strong>em</strong>, which helps define sizes relative to some base font. You set the base font size for the document to be something in the body section of the stylesheet, then say how other elements should be scaled in their particular section of the stylesheet. If you set the base font size to be 18px, then make the h1 font size 2em and the h2 size 1.6em, then the h1 will be twice as big as the body copy and the h2 will be 1.6 times as big as the body copy. If we want to change the size of our base font, we can do that, and the rest of the page will scale accordingly thanks to the em units of measurement </li>
+      <li>We can select multiple HTML elements in the same CSS styling rule by separating them with commas, so multiple things get defined with a single rule and can all be altered at once whenever that rule is tweaked.</li>
+      <li>font-family is a built-in CSS property that defines the typeface for whatever element you selected. It accepts multiple values because not all users will have the same fonts installed. In our case, the browser tries to load the left-most one first (Helvetica), falls back to Arial if the user doesn’t have it, and finally chooses the system’s default sans serif font.</li>
+      <li>list-style-type lets us alter the bullet icons used for li elements, usually getting defined on the parent ul or ol element. There's also a none option, which is often used when marking up menu navigation in a ul list -- it lets the menu's list items be styled more like buttons. You can even create custom bullets for li elements with the list-style-image property </li>
+      <li>To reuse a stylesheet, just add the same link element to any other page we want to style the same way. Whenever we change a style in the stylesheet, those changes will automatically be reflected in any web pages linked to that stylesheet </li>
+      <li>The text-decoration property determines whether text is underlined or not. By setting it to none, we can remove the default underline from all of our links. The other common value for text-decoration is line-through to strike out “deleted” text. But, remember that meaning should always be conveyed through HTML—not CSS. It’s better to use the ins and del elements instead of adding a line-through style to, say, an ordinary p element.</li>
+      <li>text-align defines the alignment of text in an element. NOTE: it always aligns to the entire page </li>
+      <li>font-weight defines the boldness of the text in an element, font-style says whether or not it's italic </li>
+      <li>The “cascading” part of CSS is due to the fact that rules cascade down from multiple sources. The CSS hierarchy for every web page looks like this:the browser’s default stylesheet, user-defined stylesheets, external stylesheets (that’s us), page-specific styles (that’s also us), inline styles (that could be us, but it never should be). This is ordered from least to most precedence, which means styles defined in each subsequent step override previous ones. For example, inline styles will always make the browser ignore its default styles.</li>
+      <li>The style element is used to add page-specific CSS rules to individual HTML documents. The style element always lives in the head of a web page, which makes sense because it’s metadata, not actual content. Anything you would put in our styles.css file can live in this style element. It uses the exact same CSS syntax as an external stylesheet, but everything here will override rules in our styles.css file. In this case, we’re telling the browser to ignore the color property we defined for body in our external stylesheet and use another color instead.</li>
+      <li>You can also insert style things like you would an inline element -- these are called inline styles. Basically, you can stick CSS rules in the style attribute of an HTML element right on the HTML page. Inline styles are the most specific way to define CSS because they trump any other style declarations. Avoid inline styling AT ALL COSTS because it makes it impossible to change styles from the external stylesheet. To re-style things, you'd have to go through every page and update every element with a style attribute, rather than just changing the one style sheet one time </li>
+      <li>CSS rules can be spread across multiple stylesheets by having multiple link elements on the same page, like using different stylesheets to separate out styles for different sections of your site. This way, you can selectively apply consistent styles to different categories of web pages</li>
+      <li>The order of link elements matters: stylesheets that come later in the link list will override those that come earlier in the list. Usually, you put your "base" or "master" styles in a global stylesheet, like styles.css, then supplement that with section-specific stylesheets like product.css or blog.css that come after the master stylesheet. This way, you can organize CSS rules into manageable files without having to deal with page-specific and inline styles </li>
+    </ul>
+
+    <h1>Hello, CSS</h1>
+
+    <p>CSS lets us style HTML elements. There’s also
+       <a href='dummy.html'>another page</a> associated with this example.</p>
+
+    <h2>List Styles</h2>
+
+    <p>You can style unordered lists with the following bullets:</p>
+
+    <ul>
+      <li>disc</li>
+      <li>circle</li>
+      <li>square</li>
+    </ul>
+
+    <p>And you can number ordered lists with the following:</p>
+
+    <ol>
+      <li>decimal</li>
+      <li>lower-roman</li>
+      <li>upper-roman</li>
+      <li>lower-alpha</li>
+      <li>upper-alpha</li>
+      <li>(and many more!)</li>
+    </ol>
+
+  </body>
+</html>

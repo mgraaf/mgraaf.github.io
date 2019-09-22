@@ -1,0 +1,33 @@
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+body {
+  color: #414141; /* dark gray */
+  background-color: #EEEEEE; /* light gray */
+}
+
+p {
+  text-align: left;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: lower-roman;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+<!-- Metadata goes here: page title, CSS stylesheets, anything required to render the page that you might not want the user to see -->
+
+<!-- Always nest your elements, no overlaps!!! -->
+
+    <meta charset="utf-8">
+    <title> Interneting is easy! </title>
+  </head>
+  <body>
+    <!-- Visible page content goes here -->
+
+    <!-- Anything starting/ending with the thingies will be ignored by the browser, good for documentation and notes to yourself -->
+    <h1> Interneting is Easy! </h1>
+    <p>
+      <!-- The p tag marks all the text in it as a  distinct paragraph -->
+
+      First, we need some basic HTML. HTML should offer semantic info about your content, not presentational info -- define the structure of the document with HTML, and leave the appearance to CSS.
+
+      Web pages are made of HTML elements, each element adds different meaning to the text it contains, and elements get nested inside each other.
+
+      HTML defines <em>what</em> you want to say, then CSS defines <em>how</em> you say it.
+    </p>
+
+    <h2> Headings </h2>
+    <p>
+      Headings define the outline of your site. There are 6 levels of headings. They are the main way you mark up different sections of content and define the outline of the page as both humans and search engines see it.
+    </p>
+
+    <h2> Lists </h2>
+    <p>
+      This is how you make an unordered list:
+    </p>
+
+    <ul>
+      <li> Add a "ul" element, which stands for an unordered list</li>
+      <li>Add each item on the list in its own "li" element</li>
+      <li>The things on the list don't need to be in any special order</li>
+      <li>NOTE: "ul" elements should only contain "li" elements inside them, so you need to wrap any paragraphs in an "li" tag </li>
+      <li>Good candidates for unordered lists are inventories, product features, pro/con lists, and navigational menus </li>
+    </ul>
+
+    <p>
+      This is what an ordered list looks like:
+    </p>
+    <ol>
+      <li>See the "ol" element wrapping everything? </li>
+      <li>But the list item elements, "li" are still the same </li>
+      <li>Also, see how the numbers of the list increase on their own? </li>
+      <li>You should be noticing this precise order, because this is an ordered list </li>
+      <li>Good candidates for ordered lists are recipes, instructions, and tables of contents </li>
+    </ol>
+
+    <h2> Inline Elements and How They Work </h2>
+    <p>
+      <em>Sometimes,</em> you need to draw attention to a certain word or phrase. The "em" tag makes stuff italic.
+    </p>
+    <p>
+      Other times, you need to <strong>strongly emphasize</strong> an important word or phrase. The "strong" tag makes things bold.
+    </p>
+    <p>
+      And sometimes, <em><strong>you need to shout!</strong></em> Nesting a "strong" tag inside an "em" tag makes type that's both italic and bold.
+    </p>
+
+    <h2>Empty Elements</h2>
+
+    <p>
+    Thanks for reading! Interneting should be getting easier now.
+    </p>
+
+    <p>Regards,
+    The Authors</p>
+
+    <p>
+      The hard return after "Regards," in the code above will appear as a line break on the web page. Why? Because HTML condenses consecutive spaces, tabs, or newlines, all known as "whitespace," into a single space.Make a hard line break by inserting the self-closing "br/" tag into your paragraph.
+    </p>
+
+    <p>Regards, <br> The Authors</p>
+
+    <h2>More Empty Elements</h2>
+
+    <p>
+      Thanks again, and best wishes!
+    </p>
+
+    <hr>
+
+    <p>
+      P.S. This page might look like crap, but that's what CSS is for. A horizontal rule, or thematic break (a long horizontal line between sections of content), is created via the self-closing "hr" tag. A horizontal line carries less significance than the separation created with a new heading element, but more significance than a new paragraph.
+    </p>
+
+    <p>
+      The trailing slash "/" seen in a closing tag is optional for all empty HTML elements.
+    </p>
+  </body>
+</html>
