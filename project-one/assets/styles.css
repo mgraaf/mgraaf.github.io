@@ -40,6 +40,8 @@ body {  /* Body Div encapsulating the entire page */
   position: absolute;
   top: -72px;
   left: 185px;
+
+  z-index: 5; /* Puts it on top of the top right analysis arrow */
 }
 
 .character-and-button {  /* Div containing both ampersand (with surrounding space for analyses and arrows) and button */
@@ -92,58 +94,49 @@ button:hover {
   color: #FFCC00 /* Gold */
 }
 
-.top-left-analysis {
-  width: 233px;
-  height: 77px;
+.top-left-analysis img { /* Top Left Arrow */
+  width: 66px;  /* Original size: 3300 px, 10% = 33 px*/
+  height: 51px; /* Original size: 2550 px, 10% = 25.5 px*/
 
   position: absolute;
-  top: 100px;
-  left: 28px;
-
-  background-color: #F2E114 /* Yellow-Gold*/
+  top: 95px;
+  left: 195px;
 }
 
-.bottom-left-analysis {
-  width: 229px;
-  height: 73px;
+.bottom-left-analysis img { /* Bottom Left Arrow */
+  width: 66px;  /* Original size: 3300 px, 10% = 33 px*/
+  height: 51px; /* Original size: 2550 px, 10% = 25.5 px*/
 
   position: absolute;
-  top: 230px;
-
-  background-color: #F2E114 /* Yellow-Gold*/
+  top: 240px;
+  left: 158px;
 }
 
-.top-right-analysis {
-  width: 284px;
-  height: 63px;
+.top-right-analysis img { /* Top Right Arrow */
+  width: 66px;  /* Original size: 3300 px, 10% = 33 px*/
+  height: 51px; /* Original size: 2550 px, 10% = 25.5 px*/
 
   position: absolute;
   top: 60px;
-  right: 28px;
-
-  background-color: #F2E114 /* Yellow-Gold*/
+  right: 243px;
 }
 
-.middle-right-analysis {
-  width: 232px;
-  height: 63px;
+.middle-right-analysis img { /* Middle Right Arrow */
+  width: 66px;  /* Original size: 3300 px, 10% = 33 px*/
+  height: 51px; /* Original size: 2550 px, 10% = 25.5 px*/
 
   position: absolute;
-  top: 172px;
-  right: 45px;
-
-  background-color: #F2E114 /* Yellow-Gold*/
+  top: 165px;
+  right: 212px;
 }
 
-.bottom-right-analysis {
-  width: 236px;
-  height: 50px;
+.bottom-right-analysis img { /* Bottom Right Arrow */
+  width: 66px;  /* Original size: 3300 px, 10% = 33 px*/
+  height: 51px; /* Original size: 2550 px, 10% = 25.5 px*/
 
   position: absolute;
-  top: 250px;
-  right: 1px;
-
-  background-color: #F2E114 /* Yellow-Gold*/
+  top: 245px;
+  right: 157px;
 }
 
 .sample-characters {
