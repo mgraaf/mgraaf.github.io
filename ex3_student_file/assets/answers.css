@@ -17,7 +17,7 @@ body {
 #gold-froggie {
   position: fixed;
   left: 1320px;
-  z-index: 3; /* Ony works when position: absolute or position: fixed is applied to the element */
+  z-index: 99; /* Ony works when position: absolute or position: fixed is applied to the element */
 }
 
 #red-froggie {
