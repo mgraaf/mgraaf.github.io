@@ -3,8 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title> Mackie's Letterform </title>
-    <link rel="stylesheet" href="assets/styles.css">
-    <link rel="stylesheet" href="https://use.typekit.net/dxk0wnu.css">
+    <link rel="stylesheet" href="assets/styles.css"> <!-- Stylesheet -->
+
+    <link rel="stylesheet" href="https://use.typekit.net/dxk0wnu.css"> <!-- Typekit Stylesheet - Fonts -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- jQuery Script for toggling button -->
+
+    <script src="assets/button-toggle.jquery.js"> </script>
+
   </head>
 
   <body>
@@ -26,32 +32,47 @@
 
             </div>
 
-            <button class="button" type="button" name="button">PROCEED</button>
+            <button id="button" type="button" name="button">PROCEED</button>
 
 
-            <div class="top-left-analysis">
-              <!-- Arrow and analysis to go here -->
-              <img src="assets/png-and-svg-elements/arrow-left.png" alt="Top Left Arrow"> <!-- Top Left Arrow -->
+            <div class="top-left-arrow"> <!-- Top Left Arrow -->
+              <input type="image" id="left-arrow-top" width="66px" height="51px" src="assets/png-and-svg-elements/arrow-left.png">
             </div>
 
-            <div class="bottom-left-analysis">
-              <!-- Arrow and analysis to go here -->
-              <img src="assets/png-and-svg-elements/arrow-left.png" alt="Bottom Left Arrow"> <!-- Bottom Left Arrow -->
+            <div class="top-left-text"> <!-- Top Left Analysis -->
+              <img src="assets/png-and-svg-elements/analysis-top-left.svg" alt="Top Left Analysis">
             </div>
 
-            <div class="top-right-analysis">
-              <!-- Arrow and analysis to go here -->
-              <img src="assets/png-and-svg-elements/arrow-right.png" alt="Top Right Arrow"> <!-- Top Right Arrow -->
+            <div class="bottom-left-arrow"> <!-- Bottom Left Arrow -->
+              <input type="image" id="left-arrow-bottom" width="66px" height="51px" src="assets/png-and-svg-elements/arrow-left.png">
             </div>
 
-            <div class="middle-right-analysis">
-              <!-- Arrow and analysis to go here -->
-              <img src="assets/png-and-svg-elements/arrow-right.png" alt="Middle Right Arrow"> <!-- Middle Right Arrow -->
+            <div class="bottom-left-text"> <!-- Bottom Left Analysis -->
+              <img src="assets/png-and-svg-elements/analysis-bottom-left.svg" alt="Bottom Left Analysis">
             </div>
 
-            <div class="bottom-right-analysis">
-              <!-- Arrow and analysis to go here -->
-              <img src="assets/png-and-svg-elements/arrow-right.png" alt="Bottom Right Arrow">
+            <div class="top-right-arrow"> <!-- Top Right Arrow -->
+              <input type="image" id="right-arrow-top" width="66px" height="51px" src="assets/png-and-svg-elements/arrow-right.png">
+            </div>
+
+            <div class="top-right-text"> <!-- Top Right Analysis -->
+              <img src="assets/png-and-svg-elements/analysis-top-right.svg" alt="Top Right Analysis">
+            </div>
+
+            <div class="middle-right-arrow"> <!-- Middle Right Arrow -->
+              <input type="image" id="right-arrow-middle" width="66px" height="51px" src="assets/png-and-svg-elements/arrow-right.png">
+            </div>
+
+            <div class="middle-right-text"> <!-- Middle Right Analysis -->
+              <img src="assets/png-and-svg-elements/analysis-middle-right.svg" alt="Middle Right Analysis">
+            </div>
+
+            <div class="bottom-right-arrow"> <!-- Bottom Right Arrow -->
+              <input type="image" id="right-arrow-bottom" width="66px" height="51px" src="assets/png-and-svg-elements/arrow-right.png">
+            </div>
+
+            <div class="bottom-right-text"> <!-- Bottom Right Analysis -->
+              <img src="assets/png-and-svg-elements/analysis-bottom-right.svg" alt="Bottom Right Analysis">
             </div>
 
         </div>
@@ -96,7 +117,6 @@
             </div>
 
           </div>
-
 
           <div class="citations">
             <!-- Citations -->

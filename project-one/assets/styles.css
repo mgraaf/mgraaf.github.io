@@ -54,16 +54,16 @@ body {  /* Body Div encapsulating the entire page */
 }
 
 #button-image {  /* Div nested inside the character-and-button div, containing just the button and the text on that button */
-  width: 162px; /* Size of div container */
+  width: 162px; /* Size of button div container */
   height: 66px;
   display: inline-block;
 
-  position: absolute; /* Position of div container */
+  position: absolute; /* Position of button div container */
   top: 445px;
   left: 280px;
 }
 
-#button-image img { /* PSD image of button */
+#button-image img { /* PSD image of orange button */
   width: 162px; /* Size of button image */
   height: 104px;
 
@@ -72,16 +72,16 @@ body {  /* Body Div encapsulating the entire page */
   left: -11px;
 }
 
-button {
+#button { /* Clickable "PROCEED" text */
   position: absolute; /* Button Position */
   left: 300px;
   top: 467px;
 
-  border: none; /* Button Style and Color */
+  border: none; /* Background behind text: style and color */
   background-color: #E38142; /* Burnt Orange */
   padding: 0px;
 
-  /* Button Text: Benguiat Pro ITC Medium */
+  /* "PROCEED" Text: Benguiat Pro ITC Medium */
   font-family: "itc-benguiat", serif;
   font-weight: 500;
   font-style: normal;
@@ -89,54 +89,142 @@ button {
   color: #183150; /* Navy */
 }
 
-button:hover {
+#button:hover { /* Hover state: turn text to gold */
   background-color: #E38142; /* Burnt Orange */
   color: #FFCC00 /* Gold */
 }
 
-.top-left-analysis img { /* Top Left Arrow */
-  width: 66px;  /* Original size: 3300 px, 10% = 33 px*/
-  height: 51px; /* Original size: 2550 px, 10% = 25.5 px*/
-
+.top-left-arrow input { /* Top Left Arrow hidden */
   position: absolute;
   top: 95px;
   left: 195px;
+
+  z-index: 99;
+
+  visibility: hidden;
 }
 
-.bottom-left-analysis img { /* Bottom Left Arrow */
-  width: 66px;  /* Original size: 3300 px, 10% = 33 px*/
-  height: 51px; /* Original size: 2550 px, 10% = 25.5 px*/
+.top-left-arrow input.visible { /* Top Left Arrow visible */
+  visibility: visible;
+}
 
+.top-left-text img { /* Top Left Analysis Text */
+  position: absolute;
+  top: 115px;
+  left: 32px;
+
+  z-index: 99;
+
+  visibility: hidden;
+}
+
+.bottom-left-arrow input { /* Bottom Left Arrow hidden */
   position: absolute;
   top: 240px;
   left: 158px;
+
+  z-index: 99;
+
+  visibility: hidden;
 }
 
-.top-right-analysis img { /* Top Right Arrow */
-  width: 66px;  /* Original size: 3300 px, 10% = 33 px*/
-  height: 51px; /* Original size: 2550 px, 10% = 25.5 px*/
+.bottom-left-arrow input.visible { /* Bottom Left Arrow visible */
+  visibility: visible;
+}
 
+.bottom-left-text img { /* Bottom Left Analysis Text */
+  position: absolute;
+  top: 260px;
+  left: -7px;
+
+  z-index: 99;
+
+  visibility: hidden;
+}
+
+.bottom-left-text img.visible { /* Bottom Left Text visible */
+  visibility: visible;
+}
+
+.top-right-arrow input { /* Top Right Arrow */
   position: absolute;
   top: 60px;
   right: 243px;
+
+  z-index: 98;
+
+  visibility: hidden;
 }
 
-.middle-right-analysis img { /* Middle Right Arrow */
-  width: 66px;  /* Original size: 3300 px, 10% = 33 px*/
-  height: 51px; /* Original size: 2550 px, 10% = 25.5 px*/
+.top-right-arrow input.visible { /* Top Right Arrow visible */
+  visibility: visible;
+}
 
+.top-right-text img { /* Top Right Analysis Text */
+  position: absolute;
+  top: 81px;
+  right: 22px;
+
+  z-index: 99;
+
+  visibility: hidden;
+}
+
+.top-right-text img.visible { /* Top Right Text visible */
+  visibility: visible;
+}
+
+.middle-right-arrow input { /* Middle Right Arrow */
   position: absolute;
   top: 165px;
   right: 212px;
+
+  z-index: 99;
+
+  visibility: hidden;
 }
 
-.bottom-right-analysis img { /* Bottom Right Arrow */
-  width: 66px;  /* Original size: 3300 px, 10% = 33 px*/
-  height: 51px; /* Original size: 2550 px, 10% = 25.5 px*/
+.middle-right-arrow input.visible { /* Middle Right Arrow visible */
+  visibility: visible;
+}
 
+.middle-right-text img { /* Middle Right Analysis Text */
+  position: absolute;
+  top: 185px;
+  right: 52px;
+
+  visibility: hidden;
+}
+
+.middle-right-text img.visible { /* Middle Right Text visible */
+  visibility: visible;
+}
+
+.bottom-right-arrow input { /* Bottom Right Arrow */
   position: absolute;
   top: 245px;
   right: 157px;
+
+  z-index: 99;
+
+  visibility: hidden;
+}
+
+.bottom-right-arrow input.visible { /* Bottom Right Arrow visible */
+  visibility: visible;
+}
+
+
+.bottom-right-text img { /* Bottom Right Analysis Text */
+  position: absolute;
+  top: 265px;
+  right: -3px;
+
+  visibility: hidden;
+}
+
+bottom-right-text img.visible { /* Bottom Right Text visible */
+  visibility: visible;
 }
 
 .sample-characters {
