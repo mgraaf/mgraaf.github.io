@@ -108,7 +108,7 @@ body {  /* Body Div encapsulating the entire page */
   visibility: visible;
 }
 
-.top-left-text img { /* Top Left Analysis Text */
+#top-left-text input { /* Top Left Analysis Text */
   position: absolute;
   top: 115px;
   left: 32px;
@@ -116,6 +116,10 @@ body {  /* Body Div encapsulating the entire page */
   z-index: 99;
 
   visibility: hidden;
+}
+
+#top-left-text input.visible { /* Bottom Left Arrow visible */
+  visibility: visible;
 }
 
 .bottom-left-arrow input { /* Bottom Left Arrow hidden */
@@ -132,7 +136,7 @@ body {  /* Body Div encapsulating the entire page */
   visibility: visible;
 }
 
-.bottom-left-text img { /* Bottom Left Analysis Text */
+#bottom-left-text input { /* Bottom Left Analysis Text */
   position: absolute;
   top: 260px;
   left: -7px;
@@ -142,7 +146,7 @@ body {  /* Body Div encapsulating the entire page */
   visibility: hidden;
 }
 
-.bottom-left-text img.visible { /* Bottom Left Text visible */
+#bottom-left-text input.visible { /* Bottom Left Text visible */
   visibility: visible;
 }
 
@@ -160,7 +164,7 @@ body {  /* Body Div encapsulating the entire page */
   visibility: visible;
 }
 
-.top-right-text img { /* Top Right Analysis Text */
+#top-right-text input { /* Top Right Analysis Text */
   position: absolute;
   top: 81px;
   right: 22px;
@@ -170,7 +174,7 @@ body {  /* Body Div encapsulating the entire page */
   visibility: hidden;
 }
 
-.top-right-text img.visible { /* Top Right Text visible */
+#top-right-text input.visible { /* Top Right Text visible */
   visibility: visible;
 }
 
@@ -188,7 +192,7 @@ body {  /* Body Div encapsulating the entire page */
   visibility: visible;
 }
 
-.middle-right-text img { /* Middle Right Analysis Text */
+#middle-right-text input { /* Middle Right Analysis Text */
   position: absolute;
   top: 185px;
   right: 52px;
@@ -196,7 +200,7 @@ body {  /* Body Div encapsulating the entire page */
   visibility: hidden;
 }
 
-.middle-right-text img.visible { /* Middle Right Text visible */
+#middle-right-text input.visible { /* Middle Right Text visible */
   visibility: visible;
 }
 
@@ -215,7 +219,7 @@ body {  /* Body Div encapsulating the entire page */
 }
 
 
-.bottom-right-text img { /* Bottom Right Analysis Text */
+#bottom-right-text input { /* Bottom Right Analysis Text */
   position: absolute;
   top: 265px;
   right: -3px;
@@ -223,7 +227,7 @@ body {  /* Body Div encapsulating the entire page */
   visibility: hidden;
 }
 
-bottom-right-text img.visible { /* Bottom Right Text visible */
+#bottom-right-text input.visible { /* Bottom Right Text visible */
   visibility: visible;
 }
 
