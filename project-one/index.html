@@ -1,94 +1,124 @@
 <!DOCTYPE html>
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
     <title> Mackie's Letterform </title>
-    <link rel="stylesheet" href="assets/styles.css"> <!-- Stylesheet -->
 
-    <link rel="stylesheet" href="https://use.typekit.net/dxk0wnu.css"> <!-- Typekit Stylesheet - Fonts -->
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/styles.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- jQuery Script for toggling button -->
+    <!-- Typekit Stylesheet - Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/dxk0wnu.css">
 
-    <script src="assets/button-toggle.jquery.js"> </script> <!-- Button toggling arrows-->
+    <!-- jQuery Script for toggling button -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
 
-    <script src="assets/top-left-toggle.jquery.js"> </script> <!-- Toggling text for top left arrow -->
+    <!-- Proceed Button toggle -->
+    <script src="assets/button-toggle.jquery.js"> </script>
 
-    <script src="assets/bottom-left-toggle.jquery.js"> </script> <!-- Toggling text for bottom left arrow -->
+    <!-- Top left text toggle -->
+    <script src="assets/top-left-toggle.jquery.js"> </script>
 
-    <script src="assets/top-right-toggle.jquery.js"> </script> <!-- Toggling text for top right arrow -->
+    <!-- Bottom left text toggle -->
+    <script src="assets/bottom-left-toggle.jquery.js"> </script>
 
-    <script src="assets/middle-right-toggle.jquery.js"> </script> <!-- Toggling text for middle right arrow -->
+    <!-- Top right text toggle -->
+    <script src="assets/top-right-toggle.jquery.js"> </script>
 
-    <script src="assets/bottom-right-toggle.jquery.js"> </script> <!-- Toggling text for bottom right arrow -->
+    <!-- Middle right text toggle -->
+    <script src="assets/middle-right-toggle.jquery.js"> </script>
+
+    <!-- Bottom right text toggle -->
+    <script src="assets/bottom-right-toggle.jquery.js"> </script>
 
   </head>
 
   <body>
+
+    <!-- "Whole thing" div: all the page's content -->
     <div class="whole-thing">
 
+      <!-- "Centering box" div: centers page -->
       <div class="centering-box">
 
-        <div class="header">
-          <!-- Empty, for spacing only -->
-        </div>
-
+        <!-- "Character and button" div: ampersand and proceed button -->
         <div class="character-and-button">
 
             <h1>&amp;</h1>
 
+            <!-- "Button image" div: button and Art Deco backing image for button -->
             <div id="button-image">
+
+              <button id="button" type="button" name="button">PROCEED</button>
 
               <img src="assets/png-and-svg-elements/button.png" alt="Button">
 
             </div>
+            <!-- End "Button image" div -->
 
-            <button id="button" type="button" name="button">PROCEED</button>
+            <!-- "All Analysis" div: arrows and text callouts -->
+            <div class="all-analysis">
 
+              <!-- Top Left Arrow -->
+              <div class="top-left-arrow">
+                <input type="image" id="left-arrow-top" width="66px" height="51px" src="assets/png-and-svg-elements/arrow-left.png">
+              </div>
 
-            <div class="top-left-arrow"> <!-- Top Left Arrow -->
-              <input type="image" id="left-arrow-top" width="66px" height="51px" src="assets/png-and-svg-elements/arrow-left.png">
+              <!-- Top Left Analysis -->
+              <div id="top-left-text">
+                <input type="image" id="left-text-top" src="assets/png-and-svg-elements/analysis-top-left.svg" alt="Top Left Analysis">
+              </div>
+
+              <!-- Bottom Left Arrow -->
+              <div class="bottom-left-arrow">
+                <input type="image" id="left-arrow-bottom" width="66px" height="51px" src="assets/png-and-svg-elements/arrow-left.png">
+              </div>
+
+              <!-- Bottom Left Analysis -->
+              <div id="bottom-left-text">
+                <input type="image" id="left-text-bottom" src="assets/png-and-svg-elements/analysis-bottom-left.svg" alt="Bottom Left Analysis">
+              </div>
+
+              <!-- Top Right Arrow -->
+              <div class="top-right-arrow">
+                <input type="image" id="right-arrow-top" width="66px" height="51px" src="assets/png-and-svg-elements/arrow-right.png">
+              </div>
+
+              <!-- Top Right Analysis -->
+              <div id="top-right-text">
+                <input type="image" id="right-text-top" src="assets/png-and-svg-elements/analysis-top-right.svg" alt="Top Right Analysis">
+              </div>
+
+              <!-- Middle Right Arrow -->
+              <div class="middle-right-arrow">
+                <input type="image" id="right-arrow-middle" width="66px" height="51px" src="assets/png-and-svg-elements/arrow-right.png">
+              </div>
+
+              <!-- Middle Right Analysis -->
+              <div id="middle-right-text">
+                <input type="image" id="right-text-middle" src="assets/png-and-svg-elements/analysis-middle-right.svg" alt="Middle Right Analysis">
+              </div>
+
+              <!-- Bottom Right Arrow -->
+              <div class="bottom-right-arrow">
+                <input type="image" id="right-arrow-bottom" width="66px" height="51px" src="assets/png-and-svg-elements/arrow-right.png">
+              </div>
+
+              <!-- Bottom Right Analysis -->
+              <div id="bottom-right-text">
+                <input type="image" id="right-text-bottom" src="assets/png-and-svg-elements/analysis-bottom-right.svg" alt="Bottom Right Analysis">
+              </div>
+
             </div>
-
-            <div id="top-left-text"> <!-- Top Left Analysis -->
-              <input type="image" id="left-text-top" src="assets/png-and-svg-elements/analysis-top-left.svg" alt="Top Left Analysis">
-            </div>
-
-            <div class="bottom-left-arrow"> <!-- Bottom Left Arrow -->
-              <input type="image" id="left-arrow-bottom" width="66px" height="51px" src="assets/png-and-svg-elements/arrow-left.png">
-            </div>
-
-            <div id="bottom-left-text"> <!-- Bottom Left Analysis -->
-              <input type="image" id="left-text-bottom" src="assets/png-and-svg-elements/analysis-bottom-left.svg" alt="Bottom Left Analysis">
-            </div>
-
-            <div class="top-right-arrow"> <!-- Top Right Arrow -->
-              <input type="image" id="right-arrow-top" width="66px" height="51px" src="assets/png-and-svg-elements/arrow-right.png">
-            </div>
-
-            <div id="top-right-text"> <!-- Top Right Analysis -->
-              <input type="image" id="right-text-top" src="assets/png-and-svg-elements/analysis-top-right.svg" alt="Top Right Analysis">
-            </div>
-
-            <div class="middle-right-arrow"> <!-- Middle Right Arrow -->
-              <input type="image" id="right-arrow-middle" width="66px" height="51px" src="assets/png-and-svg-elements/arrow-right.png">
-            </div>
-
-            <div id="middle-right-text"> <!-- Middle Right Analysis -->
-              <input type="image" id="right-text-middle" src="assets/png-and-svg-elements/analysis-middle-right.svg" alt="Middle Right Analysis">
-            </div>
-
-            <div class="bottom-right-arrow"> <!-- Bottom Right Arrow -->
-              <input type="image" id="right-arrow-bottom" width="66px" height="51px" src="assets/png-and-svg-elements/arrow-right.png">
-            </div>
-
-            <div id="bottom-right-text"> <!-- Bottom Right Analysis -->
-              <input type="image" id="right-text-bottom" src="assets/png-and-svg-elements/analysis-bottom-right.svg" alt="Bottom Right Analysis">
-            </div>
+            <!-- End "All Analysis" div -->
 
         </div>
+        <!-- End "Character and button" div -->
 
+        <!-- Additional Sample Characters -->
         <div class="sample-characters">
-          <!-- Additional Sample Characters -->
           <section>
             <p>abcdefghijklm
             </br>nopqrstuvwxyz
@@ -96,9 +126,9 @@
           </section>
         </div>
 
+        <!-- Body Paragraph -->
         <div class="body-copy">
-          <!-- Body Paragraph -->
-          <section>
+
             <h2>Benguiat Pro ITC Medium Italic</h2>
 
             <p>Benguiat Pro ITC Medium Italic was designed by its namesake, Ed Benguiat, in 1977. Ed was in design from day one – Benguiat’s father was a display director at Bloomingdale’s. The font was created thanks to a stubborn friend who persuaded Benguiat to design a logo for his store pro bono. </p>
@@ -106,32 +136,36 @@
             <p> Benguiat is unique in its large x-height, high-waisted capitals, and ornamental details echoing Art Nouveau typefaces. It features long, finely extended line terminals that mingle with tapering serifs. The broad letters seem rounded with their large x-height, making the font slightly squat. </p>
 
             <p> This character intrigued me with its human personality. A little imagination makes the ampersand a person sitting with their knees drawn up and one arm wrapped around their legs, blowing a kiss or watching the end of their scarf wave in the wind. </p>
-          </section>
 
         </div>
+        <!-- End Body Paragraph -->
 
+        <!-- Footer: personal info, picture, citations -->
         <footer>
+
+          <!-- Picture and Personal Info div -->
           <div class="picture-and-info">
 
             <img src="assets/graaf-letterform-photo-sized.jpg" alt="Image of Mackie Graaf">
 
+            <!-- Personal Info -->
             <div class="personal-info">
-              <!-- Image and Personal Info -->
-              <section>
 
                 <h3>Mackie Graaf</h3>
                 <h4>Senior, 2020 </h4>
                  <p> Major: Visual Communication Design </p>
-              </section>
 
             </div>
+            <!-- End Personal Info -->
 
           </div>
+          <!-- End Picture and Personal Info div -->
 
+          <!-- Citations Div -->
           <div class="citations">
-            <!-- Citations -->
-            <section>
+
               <h3>Sources:</h3>
+
                 <p>Halperin, Elisa. “Edward Benguiat.” ADC Global. ADC, 2019.<a href="http://adcglobal.org/hall-of-fame/edward-benguiat/">  www.adcglobal.org/hall-of-fame/edward-benguiat/</a>. 2 September 2019</p>
 
                 <p>“ITC Benguiat.” Fonts.com. Fonts.com, n.d. <a href="https://www.fonts.com/font/itc/itc-benguiat/story"> www.fonts.com/font/itc/itc-benguiat/story.</a> </br> 2 September 2019.</p>
@@ -141,13 +175,18 @@
                 <p>“ITC Benguiat.” Linotype. Monotype GmbH, 2019. <a href="https://www.linotype.com/7006/itc-benguiat-gothic.html"> www.linotype.com/7006/itc-benguiat-gothic.html.</a> 2 September 2019.</p>
 
                 <p>Shoaf, Jeremiah. “ITC Benguiat.” Typewolf. Jeremiah Shoaf, 2019. <a href="https://www.typewolf.com/site-of-the-day/fonts/itc-benguiat"> www.typewolf.com/site-of-the-day/fonts/itc-benguiat.</a> 2 September 2019.</p>
-            </section>
           </div>
+          <!-- End Citations Div  -->
 
         </footer>
+        <!-- End Footer: personal info, picture, citations -->
 
       </div>
+      <!-- End "Centering box" div -->
 
     </div>
+    <!-- End "whole thing" div -->
+
   </body>
+
 </html>

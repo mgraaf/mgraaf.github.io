@@ -1,84 +1,86 @@
-body {  /* Body Div encapsulating the entire page */
+/* Body Div */
+body {
   padding: 0;
 
-  background-color: #00B7CC;  /* Miss Fisher Blue, the parts that get cut off in iPad view */
+  background-color: #00B7CC;
+  /* Miss Fisher Blue, the parts that get cut off in iPad view */
 }
 
- .whole-thing {  /* Main Body div, encapsulating all the page's content */
+/* Div containing all content */
+ .whole-thing {
   width: 768px;
-  height: 1024px;
 
   margin-left: auto;
   margin-right: auto;
 
-  background-color: #00DAF4;  /* Wardlow Parlour Blue */
+  background-color: #00DAF4;
+  /* Wardlow Parlour Blue */
 }
 
-.centering-box {  /* Large div containing all the info on the page, designed to center the page's contents on the screen */
+ /* Centering box div */
+.centering-box {
   width: 723px;
   height: 1024px;
 
   margin-left: auto;
   margin-right: auto;
 
-  background-color: #00DAF4;  /* Wardlow Parlour Blue */
-
-  position: absolute;
+  background-color: #00DAF4;
+ /* Wardlow Parlour Blue */
 }
 
-.character-and-button h1 { /* Ampersand, in div containing both the character with its analyses and button */
-  margin: 0;
+/* Ampersand and Proceed button */
+.character-and-button {
+  width: 708px;
+  height: 307px;
+}
+
+/* Ampersand */
+.character-and-button h1 {
+  margin-top: -75px;
+  margin-bottom: -100px;
   padding: 0;
 
-  font-family: "itc-benguiat", serif; /* Benguait Pro ITC Medium Italic*/
+/* Benguait Pro ITC Medium Italic*/
+  font-family: "itc-benguiat", serif;
   font-weight: 500;
   font-style: italic;
   font-size: 380px;
 
   text-align: center;
 
-  position: absolute;
-  top: -72px;
-  left: 185px;
-
-  z-index: 5; /* Puts it on top of the top right analysis arrow */
 }
 
-.character-and-button {  /* Div containing both ampersand (with surrounding space for analyses and arrows) and button */
-  width: 708px;
-  height: 307px;
-
-  position: absolute;
-  top: 97px;
-  left: 30px;
-}
-
-#button-image {  /* Div nested inside the character-and-button div, containing just the button and the text on that button */
-  width: 162px; /* Size of button div container */
+ /* Clickable button and background image */
+#button-image {
+  /* Size of button div container */
+  width: 162px;
   height: 66px;
-  display: inline-block;
 
-  position: absolute; /* Position of button div container */
-  top: 445px;
-  left: 280px;
+  margin: 0 auto;
+
+  position: relative;
 }
 
-#button-image img { /* PSD image of orange button */
-  width: 162px; /* Size of button image */
+/* PSD image of orange button */
+#button-image img {
+  /* Size of button image */
+  width: 162px;
   height: 104px;
 
-  position: absolute; /* Position of button image */
-  top: -20px;
-  left: -11px;
 }
 
-#button { /* Clickable "PROCEED" text */
-  position: absolute; /* Button Position */
-  left: 300px;
-  top: 467px;
+/* Clickable "PROCEED" text */
+#button {
+  /* Button Position */
+  position: absolute;
+  left: 32px;
+  top: 41px;
 
-  border: none; /* Background behind text: style and color */
-  background-color: #E38142; /* Burnt Orange */
+/* Background behind text: style and color */
+  border: none;
+  background-color: #E38142;
+  /* Burnt Orange */
   padding: 0px;
 
   /* "PROCEED" Text: Benguiat Pro ITC Medium */
@@ -86,85 +88,131 @@ body {  /* Body Div encapsulating the entire page */
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
-  color: #183150; /* Navy */
+  color: #183150;
+  /* Navy */
 }
 
-#button:hover { /* Hover state: turn text to gold */
-  background-color: #E38142; /* Burnt Orange */
-  color: #FFCC00 /* Gold */
+/* Hover state: turn text to gold */
+#button:hover {
+  background-color: #E38142;
+  /* Burnt Orange */
+
+  color: #FFCC00
+  /* Gold */
 }
 
-.top-left-arrow input { /* Top Left Arrow hidden */
+#button:focus {
+  outline: 0;
+}
+
+/* Arrows and text pop-ups */
+.all-analysis {
+  position: relative;
+  margin-top: -350px
+}
+
+/* Top Left Arrow hidden */
+.top-left-arrow input {
   position: absolute;
-  top: 95px;
-  left: 195px;
+  top: 99px;
+  left: 206px;
 
   z-index: 99;
 
   visibility: hidden;
 }
 
-.top-left-arrow input.visible { /* Top Left Arrow visible */
+/* Top Left Arrow visible */
+.top-left-arrow input.visible {
   visibility: visible;
 }
 
-#top-left-text input { /* Top Left Analysis Text */
+.top-left-arrow input.visible:focus {
+  outline: 0;
+}
+
+/* Top Left Analysis Text */
+#top-left-text input {
   position: absolute;
-  top: 115px;
-  left: 32px;
+  top: 119px;
+  left: 45px;
 
   z-index: 99;
 
   visibility: hidden;
 }
 
-#top-left-text input.visible { /* Bottom Left Arrow visible */
+/* Top Left Text visible */
+#top-left-text input.visible {
   visibility: visible;
 }
 
-.bottom-left-arrow input { /* Bottom Left Arrow hidden */
+#top-left-text input.visible:focus {
+  outline: 0;
+}
+
+/* Bottom Left Arrow hidden */
+.bottom-left-arrow input {
   position: absolute;
-  top: 240px;
-  left: 158px;
+  top: 245px;
+  left: 170px;
 
   z-index: 99;
 
   visibility: hidden;
 }
 
-.bottom-left-arrow input.visible { /* Bottom Left Arrow visible */
+/* Bottom Left Arrow visible */
+.bottom-left-arrow input.visible {
   visibility: visible;
 }
 
-#bottom-left-text input { /* Bottom Left Analysis Text */
+.bottom-left-arrow input.visible:focus {
+  outline: 0;
+}
+
+/* Bottom Left Analysis Text */
+#bottom-left-text input {
   position: absolute;
-  top: 260px;
-  left: -7px;
+  top: 266px;
+  left: 7px;
 
   z-index: 99;
 
   visibility: hidden;
 }
 
-#bottom-left-text input.visible { /* Bottom Left Text visible */
+/* Bottom Left Text visible */
+#bottom-left-text input.visible {
   visibility: visible;
 }
 
-.top-right-arrow input { /* Top Right Arrow */
+#bottom-left-text input.visible:focus {
+  outline: 0;
+}
+
+/* Top Right Arrow hidden */
+.top-right-arrow input {
   position: absolute;
-  top: 60px;
-  right: 243px;
+  top: 65px;
+  right: 235px;
 
   z-index: 98;
 
   visibility: hidden;
 }
 
-.top-right-arrow input.visible { /* Top Right Arrow visible */
+/* Top Right Arrow visible */
+.top-right-arrow input.visible {
   visibility: visible;
 }
 
-#top-right-text input { /* Top Right Analysis Text */
+.top-right-arrow input.visible:focus {
+  outline: 0;
+}
+
+/* Top Right Analysis Text */
+#top-right-text input {
   position: absolute;
   top: 81px;
   right: 22px;
@@ -174,72 +222,101 @@ body {  /* Body Div encapsulating the entire page */
   visibility: hidden;
 }
 
-#top-right-text input.visible { /* Top Right Text visible */
+/* Top Right Text visible */
+#top-right-text input.visible {
   visibility: visible;
 }
 
-.middle-right-arrow input { /* Middle Right Arrow */
+#top-right-text input.visible:focus {
+  outline: 0;
+}
+
+/* Middle Right Arrow */
+.middle-right-arrow input {
   position: absolute;
-  top: 165px;
-  right: 212px;
+  top: 170px;
+  right: 206px;
 
   z-index: 99;
 
   visibility: hidden;
 }
 
-.middle-right-arrow input.visible { /* Middle Right Arrow visible */
+/* Middle Right Arrow visible */
+.middle-right-arrow input.visible {
   visibility: visible;
 }
 
-#middle-right-text input { /* Middle Right Analysis Text */
+.middle-right-arrow input.visible:focus {
+  outline: 0;
+}
+
+/* Middle Right Analysis Text */
+#middle-right-text input {
   position: absolute;
-  top: 185px;
-  right: 52px;
+  top: 191px;
+  right: 47px;
 
   visibility: hidden;
 }
 
-#middle-right-text input.visible { /* Middle Right Text visible */
+/* Middle Right Text visible */
+#middle-right-text input.visible {
   visibility: visible;
 }
 
-.bottom-right-arrow input { /* Bottom Right Arrow */
+#middle-right-text input.visible:focus {
+  outline: 0;
+}
+
+/* Bottom Right Arrow */
+.bottom-right-arrow input {
   position: absolute;
-  top: 245px;
-  right: 157px;
+  top: 249px;
+  right: 149px;
 
   z-index: 99;
 
   visibility: hidden;
 }
 
-.bottom-right-arrow input.visible { /* Bottom Right Arrow visible */
+/* Bottom Right Arrow visible */
+.bottom-right-arrow input.visible {
   visibility: visible;
 }
 
+.bottom-right-arrow input.visible:focus {
+  outline: 0;
+}
 
-#bottom-right-text input { /* Bottom Right Analysis Text */
+/* Bottom Right Analysis Text */
+#bottom-right-text input {
   position: absolute;
-  top: 265px;
-  right: -3px;
+  top: 270px;
+  right: -11px;
 
   visibility: hidden;
 }
 
-#bottom-right-text input.visible { /* Bottom Right Text visible */
+/* Bottom Right Text visible */
+#bottom-right-text input.visible {
   visibility: visible;
 }
 
+#bottom-right-text input.visible:focus {
+  outline: 0;
+}
+
+
+/* Sample character set */
 .sample-characters {
   width: 423px;
-  height: 141px;
 
-  position: absolute;
-  left: 171px;
-  top: 355px;
+  margin: 0 auto;
+  margin-top: 150px;
 
-  font-family: "itc-benguiat", serif; /* Benguiat Pro ITC Medium Italic, 30 pts*/
+  /* Benguiat Pro ITC Medium Italic, 30 pts*/
+  font-family: "itc-benguiat", serif;
   font-weight: 500;
   font-style: italic;
   font-size: 40px;
@@ -247,16 +324,21 @@ body {  /* Body Div encapsulating the entire page */
   text-align: center;
 }
 
+/* Font name and body paragraphs */
 .body-copy {
+
   width: 636px;
   height: 226px;
 
-  margin-top: 608px;
-  margin-left: 62px;
+  margin-top: -17px;
+  margin-left: 45px;
 }
 
+/* Font name */
 .body-copy h2 {
-  font-family: "itc-benguiat", serif; /* Benguiat Pro ITC Medium Italic, 30 pts*/
+
+   /* Benguiat Pro ITC Medium Italic, 30 pts*/
+  font-family: "itc-benguiat", serif;
   font-weight: 500;
   font-style: italic;
   font-size: 37px;
@@ -264,7 +346,10 @@ body {  /* Body Div encapsulating the entire page */
   margin-bottom: 14px;
 }
 
-.body-copy p { /* Benguiat Pro ITC Book Condensed, 12 pts */
+/* Body paragraphs */
+.body-copy p {
+
+  /* Benguiat Pro ITC Book Condensed, 12 pts */
   font-family: "itc-benguiat-condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -275,6 +360,7 @@ body {  /* Body Div encapsulating the entire page */
 
 /* TEXT SIZING STRANGENESS: How to make the page so that when someone zooms in, the text stays at its current size? Zooming on Mac via command plus makes the type get way too big and break the bounds of its box */
 
+/* Picture and personal information */
 .picture-and-info {
   width: 210px;
   height: 122px;
@@ -283,8 +369,8 @@ body {  /* Body Div encapsulating the entire page */
   margin-left: 38px;
 }
 
+/* Personal info specifically */
 .personal-info {
-
   width: 105px;
   height: 64px;
 
@@ -292,9 +378,11 @@ body {  /* Body Div encapsulating the entire page */
   margin-top: -116px;
 }
 
+/* Name in personal info */
 .personal-info h3 {
 
-  font-family: "itc-benguiat", serif; /* Benguait Pro ITC Medium */
+  /* Benguait Pro ITC Medium */
+  font-family: "itc-benguiat", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 12px;
@@ -302,9 +390,11 @@ body {  /* Body Div encapsulating the entire page */
   margin-bottom: -7px;
 }
 
+/* Year in personal info */
 .personal-info h4 {
 
-  font-family: "itc-benguiat", serif; /* Benguait Pro ITC Medium */
+  /* Benguait Pro ITC Medium */
+  font-family: "itc-benguiat", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 10px;
@@ -312,8 +402,11 @@ body {  /* Body Div encapsulating the entire page */
   margin-bottom: -5px;
 }
 
+/* Major in personal info */
 .personal-info p {
-  font-family: "itc-benguiat", serif; /* Benguait Pro ITC Medium */
+
+  /* Benguait Pro ITC Medium */
+  font-family: "itc-benguiat", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 10px;
@@ -327,20 +420,27 @@ body {  /* Body Div encapsulating the entire page */
   margin-top: -133px;
 }
 
+/* Sources header in citations` */
 .citations h3 {
-  font-family: "itc-benguiat", serif; /* Benguait Pro ITC Medium */
+
+  /* Benguait Pro ITC Medium */
+  font-family: "itc-benguiat", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 12px;
 }
 
+/* Individual citations */
 .citations p{
-  font-family: itc-benguiat, serif; /* Benguait Pro ITC Book */
+
+  /* Benguait Pro ITC Book */
+  font-family: itc-benguiat, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 10px;
 
-  margin-top: -10px; /* For spacing between lines of text */
+  margin-top: -10px;
+  /* For spacing between lines of text */
 
   padding-left: 22px ;
   text-indent: -24px ;
