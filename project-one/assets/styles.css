@@ -97,7 +97,7 @@ body {
   background-color: #E38142;
   /* Burnt Orange */
 
-  color: #FFCC00
+  color: #FFCC00;
   /* Gold */
 }
 
@@ -431,7 +431,7 @@ body {
 }
 
 /* Individual citations */
-.citations p{
+.citations p {
 
   /* Benguait Pro ITC Book */
   font-family: itc-benguiat, serif;
@@ -446,6 +446,26 @@ body {
   text-indent: -24px ;
 }
 
+.citations p:focus {
+  outline: 0;
+}
+
+a:link {
+  /* Get rid of the underlined-link look */
+  text-decoration: none;
+  /* Change the default link color to burnt orange, echoing Proceed button */
+  color: #E38142;
+}
+
+a:visited {
+  /* Return link color to burnt orange, echoing Proceed button */
+  color: #E38142;
+}
+
+a:hover {
+  /* Hover state cream, whether or not the link has been visited */
+  color: #FFF4BD;
+}
 
 
 /* Fonts
