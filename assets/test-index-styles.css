@@ -1,5 +1,24 @@
+.title-container {
+  display: flex;
+  align-items: baseline;
+  margin-left: 10px;
+}
+
 .title {
+  /* DIN Condensed Light */
+  font-family: "din-condensed", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  font-style: normal;
   text-align: center;
+}
+
+.selfie img {
+  /* Original dimensions: 184 X 267 px */
+  width: 92px;
+  height: 133.5px;
+  padding: 0;
+  margin: 0;
 }
 
 .project-one {
@@ -18,10 +37,27 @@
 }
 
 .project-one h2 {
-  /* Benguiat Pro ITC Medium Italic */
+  /* Benguiat Pro ITC Medium */
   font-family: "itc-benguiat", serif;
   font-weight: 500;
-  font-style: italic;
+  font-style: normal;
+}
+
+.project-one li {
+  /* Benguiat Pro ITC Book Condensed, 12 pts */
+  font-family: "itc-benguiat-condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.project-one li:hover {
+  /* Miss Fisher Gold */
+  color: #FFCC00;
+}
+
+.project-one a:hover {
+  /* Cream */
+  color: #FFF4BD;
 }
 
 .exercises {
@@ -43,6 +79,21 @@
   font-weight: normal;
 }
 
+.exercises li {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+.exercises li:hover {
+  /* Miss Fisher Gold */
+  color: #FFCC00;
+}
+
+.exercises a:hover {
+  /* Frosted Red */
+  color: #e74144;
+}
+
 .tutorials {
   width: 350px;
   height: 500px;
@@ -55,6 +106,30 @@
 .tutorials:hover {
   /* Frosted Blue */
   background-color: #b3d7fd;
+}
+
+.tutorials h2 {
+  /* PT Sans font */
+  font-family: "pt-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tutorials li {
+  /* PT Sans font */
+  font-family: "pt-sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tutorials li:hover {
+  /* Miss Fisher Gold */
+  color: #FFCC00;
+}
+
+.tutorials a:hover {
+  /* Pale gray */
+  color: #8b929a;
 }
 
 /* Fonts
