@@ -1,24 +1,16 @@
 .title-container {
   display: flex;
-  align-items: baseline;
-  margin-left: 10px;
+  justify-content: center;
 }
 
-.title {
-  /* DIN Condensed Light */
-  font-family: "din-condensed", sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  font-style: normal;
-  text-align: center;
-}
+.title-container img {
+  /* Original dimensions: 1237 X 514 px */
+  /* 10%: 123.7 and 51.4 px */
+  display: flex;
+  justify-content: center;
 
-.selfie img {
-  /* Original dimensions: 184 X 267 px */
-  width: 92px;
-  height: 133.5px;
-  padding: 0;
-  margin: 0;
+  width: 371.1px;
+  height: 154.2px;
 }
 
 .project-one {
