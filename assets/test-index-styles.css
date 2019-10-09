@@ -52,6 +52,50 @@
   color: #FFF4BD;
 }
 
+
+
+
+
+.project-two {
+  width: 350px;
+  height: 500px;
+  float: left;
+  margin: 5px;
+  padding: 30px;
+  /* Background color: grey */
+  background-color: #efefef;
+}
+
+.project-two:hover {
+  /* CHANGE this project's color!!! */
+  /* Background color: Wardlow Parlour Blue */
+  background-color: #00DAF4;
+}
+
+.project-two h2 {
+  /* Set header font */
+}
+
+.project-two li {
+  /* Set font of list elements */
+}
+
+.project-two li:hover {
+  /* CHANGE the hover color!!! */
+  /* Miss Fisher Gold */
+  color: #FFCC00;
+}
+
+.project-two a:hover {
+  /* CHANGE hover color! */
+  /* Cream */
+  color: #FFF4BD;
+}
+
+
+
+
+
 .exercises {
   width: 350px;
   height: 500px;
@@ -85,6 +129,10 @@
   /* Frosted Red */
   color: #e74144;
 }
+
+
+
+
 
 .tutorials {
   width: 350px;
@@ -123,68 +171,3 @@
   /* Pale gray */
   color: #8b929a;
 }
-
-/* Fonts
-
-Benguiat Pro ITC Bold
-font-family: itc-benguiat, serif;
-font-weight: 700;
-font-style: normal;
-
-Benguiat Pro ITC Bold Italic
-font-family: itc-benguiat, serif;
-font-weight: 700;
-font-style: italic;
-
-Benguiat Pro ITC Book
-font-family: itc-benguiat, serif;
-font-weight: 400;
-font-style: normal;
-
-Benguiat Pro ITC Book Italic
-font-family: itc-benguiat, serif;
-font-weight: 400;
-font-style: italic;
-
-Benguiat Pro ITC Medium
-font-family: itc-benguiat, serif;
-font-weight: 500;
-font-style: normal;
-
-Benguiat Pro ITC Medium Italic
-font-family: itc-benguiat, serif;
-font-weight: 500;
-font-style: italic;
-
-
-Benguiat Pro ITC Bold Condensed
-font-family: itc-benguiat-condensed, sans-serif;
-font-weight: 700;
-font-style: normal;
-
-Benguiat Pro ITC Bold Condensed Italic
-font-family: itc-benguiat-condensed, sans-serif;
-font-weight: 700;
-font-style: italic;
-
-Benguiat Pro ITC Book Condensed
-font-family: itc-benguiat-condensed, sans-serif;
-font-weight: 400;
-font-style: normal;
-
-Benguiat Pro ITC Book Condensed Italic
-font-family: itc-benguiat-condensed, sans-serif;
-font-weight: 400;
-font-style: italic;
-
-Benguiat Pro ITC Medium Condensed
-font-family: itc-benguiat-condensed, sans-serif;
-font-weight: 500;
-font-style: normal;
-
-Benguiat Pro ITC Medium Condensed Italic
-font-family: itc-benguiat-condensed, sans-serif;
-font-weight: 500;
-font-style: italic;
-
- */
