@@ -74,11 +74,19 @@ a:link {
 }
 
 .project-two h2 {
-  /* Set header font */
+  /* Helvetica Neue  Bold */
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 27px;
 }
 
 .project-two li {
-  /* Set font of list elements */
+  /* Helvetica Neue */
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-style: normal;
 }
 
 .project-two li:hover {
@@ -110,13 +118,17 @@ a:link {
 }
 
 .exercises h2 {
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-weight: normal;
+  /* Sys TT Bold */
+  font-family: "sys-tt", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .exercises li {
-  font-family: "Helvetica", "Arial", sans-serif;
-  font-weight: normal;
+  /* Sys TT Regular */
+  font-family: "sys-tt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .exercises li:hover {
