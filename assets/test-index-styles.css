@@ -1,11 +1,13 @@
+a:link {
+  text-decoration: none;
+}
+
 .title-container {
   display: flex;
   justify-content: center;
 }
 
 .title-container img {
-  /* Original dimensions: 1237 X 514 px */
-  /* 10%: 123.7 and 51.4 px */
   display: flex;
   justify-content: center;
 
@@ -67,9 +69,8 @@
 }
 
 .project-two:hover {
-  /* CHANGE this project's color!!! */
-  /* Background color: Wardlow Parlour Blue */
-  background-color: #00DAF4;
+  /* Background color: Cabbage Pale Green */
+  background-color: #96F982;
 }
 
 .project-two h2 {
@@ -81,15 +82,13 @@
 }
 
 .project-two li:hover {
-  /* CHANGE the hover color!!! */
   /* Miss Fisher Gold */
   color: #FFCC00;
 }
 
 .project-two a:hover {
-  /* CHANGE hover color! */
-  /* Cream */
-  color: #FFF4BD;
+  /* Black */
+  color: black;
 }
 
 
@@ -106,8 +105,8 @@
 }
 
 .exercises:hover {
-  /* Pale Green */
-  background-color: #3bd369;
+  /* Raddish Red */
+  background-color: #FF4051;
 }
 
 .exercises h2 {
@@ -126,8 +125,8 @@
 }
 
 .exercises a:hover {
-  /* Frosted Red */
-  color: #e74144;
+  /* Miss Fisher Gold */
+  color: #FFCC00;
 }
 
 
