@@ -1,0 +1,195 @@
+/* Body Div */
+body {
+  padding: 0;
+
+  background-color: red;
+
+  font-family: "Helvetica Neue"
+  }
+
+/* Div containing all content */
+ .everything {
+  width: 768px;
+  height: 1024px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #37CFF6;
+  /* Sky Blue */
+}
+
+.home-button {
+  float: left;
+
+  width: 183px;
+  height: 81px;
+
+  background-color: orange;
+
+  margin-left: 12px;
+
+  background-color: #96F982;
+  /* Cabbage Green */
+
+}
+
+.nav-bar {
+  position: relative;
+
+  text-align: center;
+
+}
+
+.title-card {
+  float: left;
+
+  width: 378px;
+  height: 81px;
+
+  background-color: #A84E0F;
+  /* Wood-brown, temporary sign */
+}
+
+.gallery-button {
+  float: left;
+
+  width: 183px;
+  height: 81px;
+
+  background-color: #96F982;
+  /* Cabbage Green */
+}
+
+.home-button a {
+  position: absolute;
+  top: 30px;
+  left: 75px;
+}
+
+.gallery-button a {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
+
+.sidebar {
+  float: left;
+
+  width: 248px;
+  height: 746px;
+
+  background-color: #96F982;
+  /* Cabbage Green */
+
+}
+
+.sidebar-header {
+
+  text-align: center;
+
+  width: 248px;
+  height: 34px;
+
+  background-color: #47CD3A;
+  /* Lettuce Green */
+}
+
+.veggie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrot-square {
+  width: 88px;
+  height: 88px;
+
+  background-color: #C42AF0;
+  /* Temporary Image purple */
+}
+
+.cabbage-square {
+  width: 88px;
+  height: 88px;
+
+  background-color: #C42AF0;
+  /* Temporary Image purple */
+}
+
+.pea-square {
+  width: 88px;
+  height: 88px;
+
+  background-color: #C42AF0;
+  /* Temporary Image purple */
+}
+
+.corn-square {
+  width: 88px;
+  height: 88px;
+
+  background-color: #C42AF0;
+  /* Temporary Image purple */
+}
+
+.beet-square {
+  width: 88px;
+  height: 88px;
+
+  background-color: #C42AF0;
+  /* Temporary Image purple */
+}
+
+.plot-and-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plot {
+  float: right;
+
+  margin-bottom: 125px;
+
+  width: 378px;
+  height: 456px;
+
+  background-color: #C42AF0;
+  /* Temporary Image purple */
+}
+
+.body-text {
+  float: right;
+
+  width: 378px;
+  height: 139px;
+
+  background-color: #A84E0F;
+  /* Wood-brown, temporary sign */
+
+}
+
+.save-button {
+  position: absolute;
+  left: 640px;
+  top: 137px;
+}
+
+/* .restart-button {
+  position: absolute;
+} WHY does positioning this absolutely throw off everything else, and how do I fix/work around it?*/
+
+.bunny {
+
+  position: absolute;
+  right: 369px;
+  bottom: -45px;
+
+  width: 88px;
+  height: 88px;
+
+  background-color: #C42AF0;
+  /* Temporary Image purple */
+}
