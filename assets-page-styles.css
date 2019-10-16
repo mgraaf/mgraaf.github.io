@@ -1,0 +1,135 @@
+a:link {
+  text-decoration: none;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.title-container img {
+  display: flex;
+  justify-content: center;
+
+  width: 371.1px;
+  height: 154.2px;
+}
+
+.garden-bits {
+  width: 350px;
+  height: 500px;
+  float: left;
+  margin: 5px;
+  padding: 30px;
+  /* Background color: grey */
+  background-color: #efefef;
+}
+
+.garden-bits:hover {
+  /* Background color: Wardlow Parlour Blue */
+  background-color: #00DAF4;
+}
+
+.garden-bits h2 {
+  /* Helvetica Neue  Bold */
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 27px;
+}
+
+.garden-bits li {
+  /* Helvetica Neue */
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.garden-bits li:hover {
+  /* Miss Fisher Gold */
+  color: #FFCC00;
+}
+
+.garden-bits a:hover {
+  /* Cream */
+  color: #FFF4BD;
+}
+
+
+
+
+
+.veggies {
+  width: 350px;
+  height: 500px;
+  float: left;
+  margin: 5px;
+  padding: 30px;
+  /* Background color: grey */
+  background-color: #efefef;
+}
+
+.veggies:hover {
+  /* Background color: Cabbage Pale Green */
+  background-color: #96F982;
+}
+
+.veggies h2 {
+  /* Helvetica Neue  Bold */
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 27px;
+}
+
+.veggies li {
+  /* Helvetica Neue */
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.veggies li:hover {
+  /* Miss Fisher Gold */
+  color: #FFCC00;
+}
+
+.veggies a:hover {
+  /* Black */
+  color: black;
+}
+
+
+
+
+
+.home {
+  width: 350px;
+  height: 500px;
+  float: left;
+  margin: 5px;
+  padding: 30px;
+  /* Background color: grey */
+  background-color: #efefef;
+}
+
+.home:hover {
+  /* Background color: Cabbage Pale Green */
+  background-color: #96F982;
+}
+
+.home h2 {
+  /* Helvetica Neue  Bold */
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 27px;
+}
+
+.veggies a:hover {
+  /* Black */
+  color: black;
+}
