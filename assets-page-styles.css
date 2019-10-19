@@ -60,7 +60,7 @@ a:link {
 
 
 
-.veggies {
+.veggies-dirt {
   width: 350px;
   height: 500px;
   float: left;
@@ -70,12 +70,12 @@ a:link {
   background-color: #efefef;
 }
 
-.veggies:hover {
+.veggies-dirt:hover {
   /* Background color: Cabbage Pale Green */
   background-color: #96F982;
 }
 
-.veggies h2 {
+.veggies-dirt h2 {
   /* Helvetica Neue  Bold */
   font-family: "Helvetica Neue";
   font-size: 24px;
@@ -84,19 +84,63 @@ a:link {
   line-height: 27px;
 }
 
-.veggies li {
+.veggies-dirt li {
   /* Helvetica Neue */
   font-family: "Helvetica Neue";
   font-weight: 400;
   font-style: normal;
 }
 
-.veggies li:hover {
+.veggies-dirt li:hover {
   /* Miss Fisher Gold */
   color: #FFCC00;
 }
 
-.veggies a:hover {
+.veggies-dirt a:hover {
+  /* Black */
+  color: black;
+}
+
+
+
+
+.veggies-clear {
+  width: 350px;
+  height: 500px;
+  float: left;
+  margin: 5px;
+  padding: 30px;
+  /* Background color: grey */
+  background-color: #efefef;
+}
+
+.veggies-clear:hover {
+  /* Background color: Cabbage Pale Green */
+  background-color: #96F982;
+}
+
+.veggies-clear h2 {
+  /* Helvetica Neue  Bold */
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 27px;
+}
+
+.veggies-clear li {
+  /* Helvetica Neue */
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.veggies-clear li:hover {
+  /* Miss Fisher Gold */
+  color: #FFCC00;
+}
+
+.veggies-clear a:hover {
   /* Black */
   color: black;
 }
