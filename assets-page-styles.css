@@ -31,19 +31,19 @@ a:link {
 }
 
 .garden-bits h2 {
-  /* Helvetica Neue  Bold */
-  font-family: "Helvetica Neue";
-  font-size: 24px;
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
   font-weight: 700;
   font-style: normal;
-  line-height: 27px;
+  font-size: 30px;
 }
 
 .garden-bits li {
-  /* Helvetica Neue */
-  font-family: "Helvetica Neue";
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 }
 
 .garden-bits li:hover {
@@ -52,8 +52,8 @@ a:link {
 }
 
 .garden-bits a:hover {
-  /* Cream */
-  color: #FFF4BD;
+  /* Dark Cabbage Green */
+  color: #167e0c;
 }
 
 
@@ -76,19 +76,19 @@ a:link {
 }
 
 .veggies-dirt h2 {
-  /* Helvetica Neue  Bold */
-  font-family: "Helvetica Neue";
-  font-size: 24px;
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
   font-weight: 700;
   font-style: normal;
-  line-height: 27px;
+  font-size: 30px;
 }
 
 .veggies-dirt li {
-  /* Helvetica Neue */
-  font-family: "Helvetica Neue";
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 }
 
 .veggies-dirt li:hover {
@@ -97,8 +97,8 @@ a:link {
 }
 
 .veggies-dirt a:hover {
-  /* Black */
-  color: black;
+  /* Dark Cabbage Green */
+  color: #167e0c;
 }
 
 
@@ -120,19 +120,19 @@ a:link {
 }
 
 .veggies-clear h2 {
-  /* Helvetica Neue  Bold */
-  font-family: "Helvetica Neue";
-  font-size: 24px;
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
   font-weight: 700;
   font-style: normal;
-  line-height: 27px;
+  font-size: 30px;
 }
 
 .veggies-clear li {
-  /* Helvetica Neue */
-  font-family: "Helvetica Neue";
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 }
 
 .veggies-clear li:hover {
@@ -141,8 +141,8 @@ a:link {
 }
 
 .veggies-clear a:hover {
-  /* Black */
-  color: black;
+  /* Dark Cabbage Green */
+  color: #167e0c;
 }
 
 
@@ -165,15 +165,14 @@ a:link {
 }
 
 .home h2 {
-  /* Helvetica Neue  Bold */
-  font-family: "Helvetica Neue";
-  font-size: 24px;
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
   font-weight: 700;
   font-style: normal;
-  line-height: 27px;
+  font-size: 30px;
 }
 
-.veggies a:hover {
-  /* Black */
-  color: black;
+.home a:hover {
+  /* Dark Cabbage Green */
+  color: #167e0c;
 }

@@ -74,19 +74,28 @@ a:link {
 }
 
 .project-two h2 {
-  /* Helvetica Neue  Bold */
-  font-family: "Helvetica Neue";
-  font-size: 24px;
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
   font-weight: 700;
   font-style: normal;
-  line-height: 27px;
+  font-size: 30px;
+}
+
+.project-two h3 {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 23px;
+  line-height: 5px;
 }
 
 .project-two li {
-  /* Helvetica Neue */
-  font-family: "Helvetica Neue";
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 }
 
 .project-two li:hover {
@@ -95,8 +104,8 @@ a:link {
 }
 
 .project-two a:hover {
-  /* Black */
-  color: black;
+  /* Dark Cabbage Green */
+  color: #167e0c;
 }
 
 
@@ -182,3 +191,32 @@ a:link {
   /* Pale gray */
   color: #8b929a;
 }
+
+/* Fonts:
+
+Comic Serif Pro
+font-family: comic-serif-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Blambot FX Pro Light Regular
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Blambot FX Pro Light Italic
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Blambot FX Pro Heavy Regular
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Blambot FX Pro Heavy Italic
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+*/

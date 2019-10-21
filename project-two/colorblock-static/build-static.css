@@ -108,14 +108,13 @@ body {
   /* Temporary Image purple */
 }
 
-#cabbage-square {
+.cabbage-square {
   width: 88px;
   height: 88px;
 
-  background-color: yellow;
+  background-color: #C42AF0;
   /* Temporary Image purple */
 }
-
 
 .pea-square {
   width: 88px;
