@@ -1,0 +1,357 @@
+/* Body Div */
+body {
+  padding: 0;
+
+  background-color: red;
+}
+
+/* Div containing all content */
+.everything {
+  width: 768px;
+  height: 1024px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #37CFF6;
+  /* Sky Blue */
+}
+
+.home-button {
+  float: left;
+
+  width: 183px;
+  height: 81px;
+
+  margin-left: 12px;
+
+  background-color: #96F982;
+  /* Cabbage Green */
+
+}
+
+.nav-bar {
+  position: relative;
+
+  text-align: center;
+
+}
+
+.title-card {
+  float: left;
+
+  width: 378px;
+  height: 81px;
+
+  background-color: #A84E0F;
+  /* Wood-brown, temporary sign */
+}
+
+.title-card h1 {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 42px;
+
+  color: white;
+
+}
+
+.gallery-button {
+  float: left;
+
+  width: 183px;
+  height: 81px;
+
+  background-color: #96F982;
+  /* Cabbage Green */
+}
+
+.home-button a {
+  position: absolute;
+  top: 30px;
+  left: 75px;
+
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+
+  color: white;
+}
+
+.gallery-button a {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+
+  color: white;
+}
+
+.sidebar {
+  float: left;
+
+  width: 248px;
+  height: 766px;
+
+  background-color: #96F982;
+  /* Cabbage Green */
+
+}
+
+.sidebar-header {
+
+  text-align: center;
+
+  width: 248px;
+  height: 34px;
+
+  background-color: #47CD3A;
+  /* Lettuce Green */
+}
+
+.sidebar-header h2 {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+
+  color: black;
+}
+
+.veggie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrot p {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+}
+
+.cabbage p {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+}
+
+.pea p {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+}
+
+.corn p {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+}
+
+.beet p {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+}
+
+#carrot-square {
+  width: 88px;
+  height: 88px;
+
+  background-color: orange;
+  /* Draggable square: Yellow */
+}
+
+#cabbage-square {
+  width: 88px;
+  height: 88px;
+
+  background-color: purple;
+  /* Draggable square: Yellow */
+}
+
+#pea-square {
+  width: 88px;
+  height: 88px;
+
+  background-color: green;
+  /* Draggable square: Yellow */
+}
+
+#corn-square {
+  width: 88px;
+  height: 88px;
+
+  background-color: yellow;
+  /* Draggable square: Yellow */
+}
+
+#beet-square {
+  width: 88px;
+  height: 88px;
+
+  background-color: red;
+  /* Draggable square: Yellow */
+}
+
+.plot-and-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plot {
+  float: right;
+
+  margin-bottom: 125px;
+
+  width: 378px;
+  height: 456px;
+
+  background-color: blue;
+  /* Temporary Image purple */
+}
+
+.plot p {
+  /* Blambot FX Pro Light Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+  color: white;
+
+}
+
+.body-text {
+  float: right;
+
+  width: 378px;
+  height: 139px;
+
+  background-color: #A84E0F;
+  /* Wood-brown, temporary sign */
+
+}
+
+.body-text p {
+  /* Blambot FX Pro Light Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+  color: white;
+}
+
+.save-button {
+  position: absolute;
+  left: 640px;
+  top: 137px;
+}
+
+#saveBtn {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+}
+
+/* .restart-button {
+  position: absolute;
+} WHY does positioning this absolutely throw off everything else, and how do I fix/work around it?*/
+
+#restartBtn {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+}
+
+.bunny {
+
+  position: absolute;
+  right: 369px;
+  bottom: -45px;
+
+  width: 88px;
+  height: 88px;
+
+  background-color: #C42AF0;
+  /* Temporary Image purple */
+}
+
+.bunny p {
+  /* Blambot FX Pro Light Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+  color: white;
+}
+
+/* Fonts:
+
+Comic Serif Pro
+font-family: comic-serif-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Blambot FX Pro Light Regular
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Blambot FX Pro Light Italic
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Blambot FX Pro Heavy Regular
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Blambot FX Pro Heavy Italic
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+ */

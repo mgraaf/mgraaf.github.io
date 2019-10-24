@@ -3,16 +3,16 @@
 /* Trying to position the title h2 text throws off all the gallery images and buttons in their flexbox container -- what's happening? */
 
 /* Body Div */
+
+/* Body Div */
 body {
   padding: 0;
 
   background-color: red;
-
-  font-family: "Helvetica Neue"
-  }
+}
 
 /* Div containing all content */
- .everything {
+.everything {
   width: 768px;
   height: 1024px;
 
@@ -36,6 +36,20 @@ body {
 
 }
 
+.home-button a {
+  position: absolute;
+  top: 30px;
+  left: 75px;
+
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+
+  color: white;
+}
+
 .nav-bar {
   position: relative;
 
@@ -53,6 +67,17 @@ body {
   /* Wood-brown, temporary sign */
 }
 
+.title-card h1 {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 42px;
+
+  color: white;
+
+}
+
 .build-button {
   float: left;
 
@@ -63,16 +88,29 @@ body {
   /* Cabbage Green */
 }
 
-.home-button a {
-  position: absolute;
-  top: 30px;
-  left: 75px;
-}
-
 .build-button a {
   position: absolute;
   top: 30px;
   right: 50px;
+
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+
+  color: white;
+}
+
+.title h2 {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+
+  color: black;
+
 }
 
 .gallery-container {
@@ -93,18 +131,107 @@ body {
   width: 159px;
   height: 192px;
 
-  background-color: #C42AF0;
+  background-color: pink;
   /* Temporary Image purple */
 }
 
-.button-bin-one {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+.gallery-one-image p {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+
+  color: black;
 }
 
-.button-bin-one button {
-  margin-top: 10px;
+
+
+/* Modal 1 */
+.gallery-one-image img {
+  width: 100%;
+
+}
+
+/* Styling of image that triggers the modal*/
+#image-one {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+#image-one:hover {
+  opacity: 0.7;
+}
+
+/* Modal background */
+.modal-1 {
+  display: none; /* hidden by default */
+  position: fixed; /* stay in place */
+  z-index: 1; /* sit on top */
+  padding-top: 100px; /* location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* enable scroll if necessary */
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal content: image */
+.modal-one-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of modal image, same width as image */
+#caption-one {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add animation: zoom in to modal */
+.modal-one-content, #caption-one {
+  -webkit-animation-name: "zoom";
+  -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Close button */
+.close-one {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close-one:hover, .close-one:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% image width on smaller screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
 }
 
 
@@ -119,19 +246,108 @@ body {
   width: 159px;
   height: 192px;
 
-  background-color: #C42AF0;
+  background-color: blue;
   /* Temporary Image purple */
 }
 
-.button-bin-two {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+.gallery-two-image p {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+
+  color: white;
 }
 
-.button-bin-two button {
-  margin-top: 10px;
+/* Modal 2 */
+.gallery-two-image img {
+  width: 100%;
+  /* How to position image so it's not hanging over the bottom of the div? */
 }
+
+/* Styling of image that triggers the modal*/
+#image-two {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+#image-two:hover {
+  opacity: 0.7;
+}
+
+/* Modal background */
+.modal-2 {
+  display: none; /* hidden by default */
+  position: fixed; /* stay in place */
+  z-index: 1; /* sit on top */
+  padding-top: 100px; /* location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* enable scroll if necessary */
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal content: image */
+.modal-two-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of modal image, same width as image */
+#caption-two {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add animation: zoom in to modal */
+.modal-two-content, #caption-two {
+  -webkit-animation-name: "zoom";
+  -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Close button */
+.close-two {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close-two:hover, .close-two:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% image width on smaller screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
 
 .gallery-three {
   float: left;
@@ -144,19 +360,109 @@ body {
   width: 159px;
   height: 192px;
 
-  background-color: #C42AF0;
+  background-color: pink;
   /* Temporary Image purple */
 }
 
-.button-bin-three {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+.gallery-three-image p {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+
+  color: black;
 }
 
-.button-bin-three button {
-  margin-top: 10px;
+/* Modal 3 */
+.gallery-three-image img {
+  width: 100%;
+  /* How to position image so it's not hanging over the bottom of the div? */
 }
+
+/* Styling of image that triggers the modal*/
+#image-three {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+#image-three:hover {
+  opacity: 0.7;
+}
+
+/* Modal background */
+.modal-3 {
+  display: none; /* hidden by default */
+  position: fixed; /* stay in place */
+  z-index: 1; /* sit on top */
+  padding-top: 100px; /* location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* enable scroll if necessary */
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal content: image */
+.modal-three-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of modal image, same width as image */
+#caption-three {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add animation: zoom in to modal */
+.modal-three-content, #caption-three {
+  -webkit-animation-name: "zoom";
+  -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Close button */
+.close-three {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close-three:hover, .close-three:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% image width on smaller screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
 
 .gallery-four {
   float: left;
@@ -169,19 +475,108 @@ body {
   width: 159px;
   height: 192px;
 
-  background-color: #C42AF0;
+  background-color: blue;
   /* Temporary Image purple */
 }
 
-.button-bin-four {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+.gallery-four-image p {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+
+  color: white;
 }
 
-.button-bin-four button {
-  margin-top: 10px;
+/* Modal 4 */
+.gallery-four-image img {
+  width: 100%;
+  /* How to position image so it's not hanging over the bottom of the div? */
 }
+
+/* Styling of image that triggers the modal*/
+#image-four {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+#image-four:hover {
+  opacity: 0.7;
+}
+
+/* Modal background */
+.modal-4 {
+  display: none; /* hidden by default */
+  position: fixed; /* stay in place */
+  z-index: 1; /* sit on top */
+  padding-top: 100px; /* location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* enable scroll if necessary */
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal content: image */
+.modal-four-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of modal image, same width as image */
+#caption-four {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add animation: zoom in to modal */
+.modal-four-content, #caption-four {
+  -webkit-animation-name: "zoom";
+  -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Close button */
+.close-four {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close-four:hover, .close-four:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% image width on smaller screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
 
 .gallery-five {
   float: left;
@@ -194,19 +589,108 @@ body {
   width: 159px;
   height: 192px;
 
-  background-color: #C42AF0;
+  background-color: pink;
   /* Temporary Image purple */
 }
 
-.button-bin-five {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+.gallery-five-image p {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+
+  color: black;
 }
 
-.button-bin-five button {
-  margin-top: 10px;
+/* Modal 5 */
+.gallery-five-image img {
+  width: 100%;
+
 }
+
+/* Styling of image that triggers the modal*/
+#image-five {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+#image-five:hover {
+  opacity: 0.7;
+}
+
+/* Modal background */
+.modal-5 {
+  display: none; /* hidden by default */
+  position: fixed; /* stay in place */
+  z-index: 1; /* sit on top */
+  padding-top: 100px; /* location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* enable scroll if necessary */
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal content: image */
+.modal-five-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of modal image, same width as image */
+#caption-five {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add animation: zoom in to modal */
+.modal-five-content, #caption-five {
+  -webkit-animation-name: "zoom";
+  -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Close button */
+.close-five {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close-five:hover, .close-five:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% image width on smaller screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
 
 .gallery-six {
   float: left;
@@ -219,19 +703,108 @@ body {
   width: 159px;
   height: 192px;
 
-  background-color: #C42AF0;
+  background-color: blue;
   /* Temporary Image purple */
 }
 
-.button-bin-six {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+.gallery-six-image p {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+
+  color: white;
 }
 
-.button-bin-six button {
-  margin-top: 10px;
+
+/* Modal 6 */
+.gallery-six-image img {
+  width: 100%;
+
 }
+
+/* Styling of image that triggers the modal*/
+#image-six {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 3;
+}
+
+#image-six:hover {
+  opacity: 0.7;
+}
+
+/* Modal background */
+.modal-6 {
+  display: none; /* hidden by default */
+  position: fixed; /* stay in place */
+  z-index: 1; /* sit on top */
+  padding-top: 100px; /* location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* enable scroll if necessary */
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal content: image */
+.modal-six-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of modal image, same width as image */
+#caption-six {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add animation: zoom in to modal */
+.modal-six-content, #caption-six {
+  -webkit-animation-name: "zoom";
+  -webkit-animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Close button */
+.close-six {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close-six:hover, .close-six:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% image width on smaller screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
 
 /* Fonts:
 

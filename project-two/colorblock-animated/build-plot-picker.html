@@ -2,22 +2,26 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Build-a-Garden - Planting </title>
+    <title>Build-a-Garden - Pick Your Plot </title>
 
-    <link rel="stylesheet" href="build-static.css">
-    
+    <link rel="stylesheet" href="build-plot.css"> <!-- link to stylesheet Fonts -->
+
+    <link rel="stylesheet" href="https://use.typekit.net/bax1kim.css"> <!-- link to Typekit Fonts -->
+
   </head>
 
-  <!-- Modal pops up over this page to pick size of plot -->
+  <!-- Modal pops up over this page to pick size of plot - see script tag section at the end of the body div -->
 
   <body>
 
     <div class="everything"> <!-- content positioning div -->
 
+
+
       <div class="nav-bar"> <!-- nav bar div -->
 
         <div class="home-button"> <!-- home button div -->
-          <a href="welcome-static.html">Home</a>
+          <a href="welcome-animated.html">Home</a>
         </div> <!-- end home button div -->
 
         <div class="title-card"> <!-- title card div -->
@@ -25,18 +29,48 @@
         </div> <!-- end title card div -->
 
         <div class="gallery-button"> <!-- gallery button div -->
-          <a href="gallery-static.html">View Gallery</a>
+          <a href="gallery-animated.html">View Gallery</a>
         </div> <!-- end gallery button div -->
 
       </div> <!-- end nav bar div -->
 
+
+
+      <!-- button to open the modal -->
+      <button id="myBtn">Choose Garden Shape </button>
+
+      <!-- The modal itself -->
+      <div id="myModal" class="modal"> <!-- modal container -->
+
+        <!-- Modal content -->
+        <div class="modal-content">
+
+          <div class="modal-header"> <!-- modal header -->
+            <span class="close">&times;</span>
+            <h2>Pick the shape of your garden! </h2>
+          </div> <!-- end modal header -->
+
+          <div class="modal-body"> <!-- modal body content -->
+            <button id="circle-button" onclick="window.location.href = 'build-circle-plot.html';">Circle</button>
+            <button id="square-button" onclick="window.location.href = 'build-square-plot.html';">Square</button>
+          </div> <!-- end modal body content -->
+
+        </div>
+        <!-- End Modal content -->
+
+      </div> <!-- End Modal itself -->
+
+
+
       <div class="save-button"> <!-- save button div -->
-        <button type="button" name="button">Save</button>
+        <button id="saveBtn">Save</button>
       </div> <!-- end save button div -->
 
       <div class="restart-button"> <!-- restart button div -->
-        <button type="button" name="button">Restart</button>
+        <button id="restartBtn">Restart</button>
       </div> <!-- end restart button div -->
+
+
 
       <div class="sidebar-header"> <!-- sidebar header div -->
         <h2>Plant Your Veggies! </h2>
@@ -48,42 +82,39 @@
 
           <div class="carrot"> <!-- carrot div -->
             <p>Carrots</p>
-            <div class="carrot-square"> <!-- temporary carrot image div -->
-              I'm a Carrot!
+            <div id="carrot-square"> <!-- temporary carrot image div -->
             </div> <!-- end temporary carrot image div -->
           </div> <!-- end carrot div -->
 
           <div class="cabbage"> <!-- cabbage div -->
             <p>Cabbage</p>
-            <div class="cabbage-square"> <!-- temporary cabbage image div -->
-              I'm a Cabbage!
+            <div id="cabbage-square"> <!-- temporary cabbage image div -->
             </div> <!-- end temporary cabbage image div -->
           </div> <!-- end cabbage div -->
 
           <div class="pea"> <!-- pea div -->
             <p>Pea</p>
-            <div class="pea-square"> <!-- temporary pea image div -->
-              I'm a Pea!
+            <div id="pea-square"> <!-- temporary pea image div -->
             </div> <!-- end temporary pea image div -->
           </div> <!-- end pea div -->
 
           <div class="corn"> <!-- corn div -->
             <p>Corn</p>
-            <div class="corn-square"> <!-- temporary corn image div -->
-              I'm Corn!
+            <div id="corn-square"> <!-- temporary corn image div -->
             </div> <!-- end temporary corn image div -->
           </div> <!-- end corn div -->
 
           <div class="beet"> <!-- beet div -->
             <p>Beet</p>
-            <div class="beet-square"> <!-- temporary beet image div -->
-              I'm a Beet!
+            <div id="beet-square"> <!-- temporary beet image div -->
             </div> <!-- end temporary beet image div -->
           </div> <!-- end beet div -->
 
         </div> <!-- end veggie container div -->
 
       </div> <!-- end sidebar div -->
+
+
 
       <div class="plot-and-text"> <!-- plot and text div -->
         <div class="plot"> <!-- garden plot div -->
@@ -92,15 +123,53 @@
 
         <div class="body-text"> <!-- body text div -->
           <p>Drag and drop your favorite vegetables to plant your own garden! Save it when you’re done, or clear away the vegetables and start over again.</p>
-      </div> <!-- end plot and text div -->
-
       </div> <!-- end body text div -->
+
+    </div> <!-- end plot and text div -->
+
+
 
       <div class="bunny"> <!-- bunny div -->
         <p>I'm a Bunny buddy!</p>
       </div>
 
+
+
     </div> <!-- end content positioning div -->
+
+
+
+    <!-- JavaScript to run modal -->
+    <script type="text/javascript">
+
+    // Get the Modal
+    var modal = document.getElementById ("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById ("myBtn");
+
+    // Get <span> element to close Modal
+    var span = document.getElementsByClassName ("close") [0];
+
+    // Open modal when user clicks the button
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    // when the user clicks on <span> (x),  close the Modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks outside the modal, close the Modal
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+
+
 
   </body>
 </html>

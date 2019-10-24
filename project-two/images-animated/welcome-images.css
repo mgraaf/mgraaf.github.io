@@ -31,21 +31,13 @@ body {
   top: 200px;
   left: 220px;
 
-  width: 300px;
-
   background-color: #A84E0F;
   /* Wood-brown, temporary sign */
 }
 
-
 .header-text h1 {
-  /* Blambot FX Pro Heavy Regular */
-  font-family: "blambot-fx-pro", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-
-  color: white;
-
+  font-family: "Helvetica Neue";
+  font-size: 50px;
 }
 
 .tree-branch {
@@ -56,20 +48,9 @@ body {
   width: 750px;
 }
 
-.tree-branch p {
-  /* Blambot FX Pro Light Regular */
-  font-family: "blambot-fx-pro", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-
-  color: white;
-}
-
 .buttons {
   display: flex;
   margin-top: 250px;
-
 }
 
 .build-image {
@@ -87,22 +68,10 @@ body {
 }
 
 .build-button {
-  margin-left: 155px;
+  margin-left: 120px;
   margin-right: 257px;
 
   z-index: 99;
-}
-
-.build-button a {
-  /* Blambot FX Pro Light Regular */
-  font-family: "blambot-fx-pro", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-
-  color: white;
-
-  margin-left: -2px;
 }
 
 .gallery-image {
@@ -121,38 +90,16 @@ body {
   z-index: 99;
 }
 
-.gallery-button a {
-  /* Blambot FX Pro Light Regular */
-  font-family: "blambot-fx-pro", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-
-  color: white;
-
-  margin-left: -62px;
-}
-
 .shovel {
   position: absolute;
   width: 140px;
-  height: 591px;
+  height: 175px;
 
   left: 414px;
   top: 441px;
 
   background-color: #C42AF0;
   /* Temporary Image purple */
-}
-
-.shovel p {
-  /* Blambot FX Pro Light Regular */
-  font-family: "blambot-fx-pro", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-
-  color: white;
 }
 
 .robin {
@@ -167,17 +114,7 @@ body {
   /* Temporary radish red */
 }
 
-.robin p {
-  /* Blambot FX Pro Light Regular */
-  font-family: "blambot-fx-pro", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-
-  color: white;
-}
-
-.fox {
+.squirrel {
   position: absolute;
   height: 125px;
   width: 160px;
@@ -187,16 +124,6 @@ body {
 
   background-color: #FF4051;
   /* Temporary radish red */
-}
-
-.fox p {
-  /* Blambot FX Pro Light Regular */
-  font-family: "blambot-fx-pro", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-
-  color: white;
 }
 
 /* Fonts:

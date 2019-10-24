@@ -100,44 +100,44 @@ body {
   align-items: center;
 }
 
-.carrot-square {
+#carrot-square {
   width: 88px;
   height: 88px;
 
-  background-color: #C42AF0;
-  /* Temporary Image purple */
+  background-color: orange;
+  /* Draggable square: Yellow */
 }
 
-.cabbage-square {
+#cabbage-square {
   width: 88px;
   height: 88px;
 
-  background-color: #C42AF0;
-  /* Temporary Image purple */
+  background-color: purple;
+  /* Draggable square: Yellow */
 }
 
-.pea-square {
+#pea-square {
   width: 88px;
   height: 88px;
 
-  background-color: #C42AF0;
-  /* Temporary Image purple */
+  background-color: green;
+  /* Draggable square: Yellow */
 }
 
-.corn-square {
+#corn-square {
   width: 88px;
   height: 88px;
 
-  background-color: #C42AF0;
-  /* Temporary Image purple */
+  background-color: yellow;
+  /* Draggable square: Yellow */
 }
 
-.beet-square {
+#beet-square {
   width: 88px;
   height: 88px;
 
-  background-color: #C42AF0;
-  /* Temporary Image purple */
+  background-color: red;
+  /* Draggable square: Yellow */
 }
 
 .plot-and-text {
@@ -219,4 +219,4 @@ font-family: blambot-fx-pro, sans-serif;
 font-weight: 700;
 font-style: italic;
 
-*/
+ */
