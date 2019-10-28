@@ -60,31 +60,31 @@
 
           <div class="carrot"> <!-- carrot div -->
             <p>Carrots</p>
-            <div id="carrot-square"> <!-- temporary carrot image div -->
+            <div class="veggie" id="carrot-square"> <!-- temporary carrot image div -->
             </div> <!-- end temporary carrot image div -->
           </div> <!-- end carrot div -->
 
           <div class="cabbage"> <!-- cabbage div -->
             <p>Cabbage</p>
-            <div id="cabbage-square"> <!-- temporary cabbage image div -->
+            <div class="veggie" id="cabbage-square"> <!-- temporary cabbage image div -->
             </div> <!-- end temporary cabbage image div -->
           </div> <!-- end cabbage div -->
 
           <div class="pea"> <!-- pea div -->
             <p>Pea</p>
-            <div id="pea-square"> <!-- temporary pea image div -->
+            <div class="veggie" id="pea-square"> <!-- temporary pea image div -->
             </div> <!-- end temporary pea image div -->
           </div> <!-- end pea div -->
 
           <div class="corn"> <!-- corn div -->
             <p>Corn</p>
-            <div id="corn-square"> <!-- temporary corn image div -->
+            <div class="veggie" id="corn-square"> <!-- temporary corn image div -->
             </div> <!-- end temporary corn image div -->
           </div> <!-- end corn div -->
 
           <div class="beet"> <!-- beet div -->
             <p>Beet</p>
-            <div id="beet-square"> <!-- temporary beet image div -->
+            <div class="veggie" id="beet-square"> <!-- temporary beet image div -->
             </div> <!-- end temporary beet image div -->
           </div> <!-- end beet div -->
 
@@ -120,16 +120,17 @@
     <script type="text/javascript">
     $(document).ready(function (){
     $( function() {
-      $("#carrot-square").draggable({revert: 'invalid'});
-      $(".plot").droppable({accept: '#carrot-square'})
-      $(".carrot").droppable({accept: '#carrot-square'})
+      $(".veggie").draggable({revert: 'invalid'}); // Carrot 1/4
+      $(".veggie").draggable({revert: 'invalid'}); // Carrot 2/4
+      $(".plot").droppable({accept: '.veggie', helper: 'clone'}); // Carrot 3/4
+      $(".carrot").droppable({accept: '#carrot-square'}); // Carrot 4/4
+      $(".cabbage").droppable({accept: '#cabbage-square'});
+      $(".pea").droppable({accept: '#pea-square'});
+      $(".corn").droppable({accept: '#corn-square'});
+      $(".beet").droppable({accept: '#beet-square'})
       });
       });
     </script>
-
-    <!-- HOW TO REVERT FOR EVERYONE? Function is only working for whoever is last in the order, in the case of trying to apply it to multiple elements -->
-
-
 
   </body>
 </html>
