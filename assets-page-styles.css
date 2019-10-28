@@ -195,6 +195,50 @@ a:link {
 
 
 
+.gallery-cakes {
+  width: 350px;
+  height: 500px;
+  float: left;
+  margin: 5px;
+  padding: 30px;
+  /* Background color: grey */
+  background-color: #efefef;
+}
+
+.gallery-cakes:hover {
+  /* Background color: Cabbage Pale Green */
+  background-color: #96F982;
+}
+
+.gallery-cakes h2 {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.gallery-cakes li {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.gallery-cakes li:hover {
+  /* Miss Fisher Gold */
+  color: #FFCC00;
+}
+
+.gallery-cakes a:hover {
+  /* Dark Cabbage Green */
+  color: #167e0c;
+}
+
+
+
+
 .home {
   width: 350px;
   height: 500px;
