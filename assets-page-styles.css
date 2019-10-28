@@ -15,6 +15,52 @@ a:link {
   height: 154.2px;
 }
 
+
+
+
+.garden-plots {
+  width: 350px;
+  height: 500px;
+  float: left;
+  margin: 5px;
+  padding: 30px;
+  /* Background color: grey */
+  background-color: #efefef;
+}
+
+.garden-plots:hover {
+  /* Background color: Cabbage Pale Green */
+  background-color: #96F982;
+}
+
+.garden-plots h2 {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.garden-plots li {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.garden-plots li:hover {
+  /* Miss Fisher Gold */
+  color: #FFCC00;
+}
+
+.garden-plots a:hover {
+  /* Dark Cabbage Green */
+  color: #167e0c;
+}
+
+
+
 .garden-bits {
   width: 350px;
   height: 500px;
