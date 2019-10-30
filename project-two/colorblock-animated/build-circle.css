@@ -184,44 +184,89 @@ body {
   color: black;
 }
 
-#carrot-square {
+#carrot-square, #carrot-square2, #carrot-square3, #carrot-square4, #carrot-square5, #carrot-square6, #carrot-square7 {
+  position: absolute;
   width: 88px;
   height: 88px;
 
   background-color: orange;
-  /* Draggable square: Yellow */
+  /* Draggable square: orange */
 }
 
-#cabbage-square {
+#carrot-square8 {
+  width: 88px;
+  height: 88px;
+
+  background-color: orange;
+  /* Draggable square: orange */
+}
+
+#cabbage-square, #cabbage-square2, #cabbage-square3, #cabbage-square4, #cabbage-square5, #cabbage-square6, #cabbage-square7 {
+  position: absolute;
   width: 88px;
   height: 88px;
 
   background-color: purple;
-  /* Draggable square: Yellow */
+  /* Draggable square: purple */
 }
 
-#pea-square {
+#cabbage-square8 {
+  width: 88px;
+  height: 88px;
+
+  background-color: purple;
+  /* Draggable square: purple */
+}
+
+#pea-square, #pea-square2, #pea-square3, #pea-square4, #pea-square5, #pea-square6, #pea-square7 {
+  position: absolute;
   width: 88px;
   height: 88px;
 
   background-color: green;
-  /* Draggable square: Yellow */
+  /* Draggable square: green */
 }
 
-#corn-square {
+#pea-square8 {
+  width: 88px;
+  height: 88px;
+
+  background-color: green;
+  /* Draggable square: green */
+}
+
+#corn-square, #corn-square2, #corn-square3, #corn-square4, #corn-square5, #corn-square6, #corn-square7 {
+  position: absolute;
   width: 88px;
   height: 88px;
 
   background-color: yellow;
-  /* Draggable square: Yellow */
+  /* Draggable square: yellow */
 }
 
-#beet-square {
+#corn-square8 {
+  width: 88px;
+  height: 88px;
+
+  background-color: yellow;
+  /* Draggable square: yellow */
+}
+
+#beet-square, #beet-square2, #beet-square3, #beet-square4, #beet-square5, #beet-square6, #beet-square7 {
+  position: absolute;
   width: 88px;
   height: 88px;
 
   background-color: red;
-  /* Draggable square: Yellow */
+  /* Draggable square: red */
+}
+
+#beet-square8 {
+  width: 88px;
+  height: 88px;
+
+  background-color: red;
+  /* Draggable square: red */
 }
 
 .plot-and-text {
@@ -239,7 +284,7 @@ body {
   height: 456px;
 
   background-color: pink;
-  /* Temporary Image purple */
+  /* pink for circle */
 }
 
 .plot p {
@@ -274,12 +319,6 @@ body {
   color: white;
 }
 
-.save-button {
-  position: absolute;
-  left: 640px;
-  top: 137px;
-}
-
 #saveBtn {
   /* Blambot FX Pro Light Regular */
   font-family: "blambot-fx-pro", sans-serif;
@@ -288,11 +327,11 @@ body {
   font-size: 20px;
 
   color: black;
-}
 
-/* .restart-button {
-  position: absolute;
-} WHY does positioning this absolutely throw off everything else, and how do I fix/work around it?*/
+  position: relative;
+  left: 363px;
+  top: 73px;
+}
 
 #restartBtn {
   /* Blambot FX Pro Light Regular */
@@ -302,13 +341,16 @@ body {
   font-size: 20px;
 
   color: black;
+
+  position: relative;
+  left: 575px;
+  top: 48px;
 }
 
 .bunny {
-
-  position: absolute;
-  right: 369px;
-  bottom: -45px;
+  position: relative;
+  left: 609px;
+  bottom: 247px;
 
   width: 88px;
   height: 88px;

@@ -171,7 +171,7 @@ body {
 
 /* background of the modal */
 .modal {
-  display: none;
+  opacity: 1;
   /* Hides the modal by default */
   position: fixed;
   /* stay in place */
@@ -197,23 +197,9 @@ body {
   padding: 20px;
   border: 1px solid;
   width: 80%;
+  height: 200px;
   /* increase or decrease width depending on screen size */
 }
-
-/* the close button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover, .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 
 
 #saveBtn {
@@ -224,6 +210,20 @@ body {
   font-size: 20px;
 
   color: black;
+}
+
+#saveBtn {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+
+  position: relative;
+  left: 363px;
+  top: 73px;
 }
 
 #restartBtn {
@@ -414,21 +414,38 @@ body {
   color: white;
 }
 
-.save-button {
-  position: absolute;
-  left: 640px;
-  top: 137px;
+#saveBtn {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+
+  position: relative;
+  left: 363px;
+  top: 73px;
 }
 
-/* .restart-button {
-  position: absolute;
-} WHY does positioning this absolutely throw off everything else, and how do I fix/work around it?*/
+#restartBtn {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+
+  position: relative;
+  left: 575px;
+  top: 48px;
+}
 
 .bunny {
-
-  position: absolute;
-  right: 369px;
-  bottom: -45px;
+  position: relative;
+  left: 609px;
+  bottom: 247px;
 
   width: 88px;
   height: 88px;

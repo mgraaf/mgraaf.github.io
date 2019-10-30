@@ -1,136 +1,285 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Build-a-Garden - Circle Garden </title>
 
-    <link rel="stylesheet" href="build-circle.css"> <!-- link to stylesheet Fonts -->
+<head>
+  <meta charset="utf-8">
+  <title>Build-a-Garden - Circle Garden </title>
 
-    <link rel="stylesheet" href="https://use.typekit.net/bax1kim.css"> <!-- link to Typekit Fonts -->
+  <link rel="stylesheet" href="build-circle.css"> <!-- link to stylesheet Fonts -->
 
-
-
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script> <!-- drag and drop part 1/3 -->
-
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!-- drag and drop part 2/3 -->
-
-    <script src="../assets/colorblock-draggable.js" charset="utf-8"></script> <!-- drag and drop part 3/3 -->
-
-  </head>
-
-  <body>
-
-    <div class="everything"> <!-- content positioning div -->
+  <link rel="stylesheet" href="https://use.typekit.net/bax1kim.css"> <!-- link to Typekit Fonts -->
 
 
 
-      <div class="nav-bar"> <!-- nav bar div -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script> <!-- drag and drop part 1/3 -->
 
-        <div class="home-button"> <!-- home button div -->
-          <a href="welcome-animated.html">Home</a>
-        </div> <!-- end home button div -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!-- drag and drop part 2/3 -->
 
-        <div class="title-card"> <!-- title card div -->
-          <h1>In the Garden</h1>
-        </div> <!-- end title card div -->
+  <script src="../assets/colorblock-draggable.js" charset="utf-8"></script> <!-- drag and drop part 3/3 -->
 
-        <div class="gallery-button"> <!-- gallery button div -->
-          <a href="gallery-animated.html">View Gallery</a>
-        </div> <!-- end gallery button div -->
+</head>
 
-      </div> <!-- end nav bar div -->
+<body>
 
-      <div class="save-button"> <!-- save button div -->
-        <button id="saveBtn">Save</button>
-      </div> <!-- end save button div -->
-
-      <div class="restart-button"> <!-- restart button div -->
-        <button id="restartBtn" onclick="window.location.href='build-plot-picker.html';">Restart</button>
-      </div> <!-- end restart button div -->
+  <div class="everything">
+    <!-- content positioning div -->
 
 
 
-      <div class="sidebar-header"> <!-- sidebar header div -->
-        <h2>Plant Your Veggies! </h2>
-      </div> <!-- end sidebar header div -->
+    <div class="nav-bar">
+      <!-- nav bar div -->
 
-      <div class="sidebar"> <!-- sidebar div -->
+      <div class="home-button">
+        <!-- home button div -->
+        <a href="welcome-animated.html">Home</a>
+      </div> <!-- end home button div -->
 
-        <div class="veggie-container"> <!-- veggie container div -->
+      <div class="title-card">
+        <!-- title card div -->
+        <h1>In the Garden</h1>
+      </div> <!-- end title card div -->
 
-          <div class="carrot"> <!-- carrot div -->
-            <p>Carrots</p>
-            <div class="veggie" id="carrot-square"> <!-- temporary carrot image div -->
-            </div> <!-- end temporary carrot image div -->
-          </div> <!-- end carrot div -->
+      <div class="gallery-button">
+        <!-- gallery button div -->
+        <a href="gallery-animated.html">View Gallery</a>
+      </div> <!-- end gallery button div -->
 
-          <div class="cabbage"> <!-- cabbage div -->
-            <p>Cabbage</p>
-            <div class="veggie" id="cabbage-square"> <!-- temporary cabbage image div -->
-            </div> <!-- end temporary cabbage image div -->
-          </div> <!-- end cabbage div -->
+    </div> <!-- end nav bar div -->
 
-          <div class="pea"> <!-- pea div -->
-            <p>Pea</p>
-            <div class="veggie" id="pea-square"> <!-- temporary pea image div -->
-            </div> <!-- end temporary pea image div -->
-          </div> <!-- end pea div -->
+    <div class="save-button">
+      <!-- save button div -->
+      <button id="saveBtn">Save</button>
+    </div> <!-- end save button div -->
 
-          <div class="corn"> <!-- corn div -->
-            <p>Corn</p>
-            <div class="veggie" id="corn-square"> <!-- temporary corn image div -->
-            </div> <!-- end temporary corn image div -->
-          </div> <!-- end corn div -->
+    <div class="restart-button">
+      <button id="restartBtn" value="Refresh Page" onClick="window.location.reload();">Restart</button>
+    </div>
 
-          <div class="beet"> <!-- beet div -->
-            <p>Beet</p>
-            <div class="veggie" id="beet-square"> <!-- temporary beet image div -->
-            </div> <!-- end temporary beet image div -->
-          </div> <!-- end beet div -->
-
-        </div> <!-- end veggie container div -->
-
-      </div> <!-- end sidebar div -->
+    <!-- end restart button div -->
 
 
 
-      <div class="plot-and-text"> <!-- plot and text div -->
-        <div class="plot"> <!-- garden plot div -->
-          <p>Veggies get planted in this garden, shaped like a circle </p>
-        </div> <!-- end garden plot div -->
+    <div class="sidebar-header">
+      <!-- sidebar header div -->
+      <h2>Plant Your Veggies! </h2>
+    </div> <!-- end sidebar header div -->
 
-        <div class="body-text"> <!-- body text div -->
-          <p>Drag and drop your favorite vegetables to plant your own garden! Save it when you’re done, or clear away the vegetables and start over again.</p>
+    <div class="sidebar">
+      <!-- sidebar div -->
+
+      <div class="veggie-container">
+        <!-- veggie container div -->
+
+        <div class="carrot">
+          <!-- carrot div -->
+          <p>Carrots</p>
+          <div class="veggie" id="carrot-square">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="carrot-square2">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="carrot-square3">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="carrot-square4">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="carrot-square5">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="carrot-square6">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="carrot-square7">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="carrot-square8">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+        </div> <!-- end carrot div -->
+
+        <div class="cabbage">
+          <!-- cabbage div -->
+          <p>Cabbage</p>
+          <div class="veggie" id="cabbage-square">
+            <!-- temporary cabbage image div -->
+          </div> <!-- end temporary cabbage image div -->
+          <div class="veggie" id="cabbage-square2">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="cabbage-square3">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="cabbage-square4">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="cabbage-square5">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="cabbage-square6">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="cabbage-square7">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="cabbage-square8">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+        </div> <!-- end cabbage div -->
+
+        <div class="pea">
+          <!-- pea div -->
+          <p>Pea</p>
+          <div class="veggie" id="pea-square">
+            <!-- temporary pea image div -->
+          </div> <!-- end temporary pea image div -->
+          <div class="veggie" id="pea-square2">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="pea-square3">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="pea-square4">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="pea-square5">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="pea-square6">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="pea-square7">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="pea-square8">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+        </div> <!-- end pea div -->
+
+        <div class="corn">
+          <!-- corn div -->
+          <p>Corn</p>
+          <div class="veggie" id="corn-square">
+            <!-- temporary corn image div -->
+          </div> <!-- end temporary corn image div -->
+          <div class="veggie" id="corn-square2">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="corn-square3">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="corn-square4">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="corn-square5">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="corn-square6">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="corn-square7">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="corn-square8">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+        </div> <!-- end corn div -->
+
+        <div class="beet">
+          <!-- beet div -->
+          <p>Beet</p>
+          <div class="veggie" id="beet-square">
+            <!-- temporary beet image div -->
+          </div> <!-- end temporary beet image div -->
+          <div class="veggie" id="beet-square2">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="beet-square3">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="beet-square4">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="beet-square5">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="beet-square6">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="beet-square7">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="beet-square8">
+            <!-- temporary carrot image div -->
+          </div> <!-- end temporary carrot image div -->
+        </div> <!-- end beet div -->
+
+      </div> <!-- end veggie container div -->
+
+    </div> <!-- end sidebar div -->
+
+
+
+    <div class="plot-and-text">
+      <!-- plot and text div -->
+      <div class="plot">
+        <!-- garden plot div -->
+        <p>Veggies get planted in this garden, shaped like a circle </p>
+      </div> <!-- end garden plot div -->
+
+      <div class="body-text">
+        <!-- body text div -->
+        <p>Drag and drop your favorite vegetables to plant your own garden! Save it when you’re done, or clear away the vegetables and start over again.</p>
       </div> <!-- end body text div -->
 
     </div> <!-- end plot and text div -->
 
 
 
-      <div class="bunny"> <!-- bunny div -->
-        <p>I'm a Bunny buddy!</p>
-      </div>
+    <div class="bunny">
+      <!-- bunny div -->
+      <p>I'm a Bunny buddy!</p>
+    </div>
 
 
 
-    </div> <!-- end content positioning div -->
+  </div> <!-- end content positioning div -->
 
 
 
-    <script type="text/javascript">
-    $(document).ready(function (){
-    $( function() {
-      $(".veggie").draggable({revert: 'invalid'}); // Carrot 1/4
-      $(".veggie").draggable({revert: 'invalid'}); // Carrot 2/4
-      $(".plot").droppable({accept: '.veggie', helper: 'clone'}); // Carrot 3/4
-      $(".carrot").droppable({accept: '#carrot-square'}); // Carrot 4/4
-      $(".cabbage").droppable({accept: '#cabbage-square'});
-      $(".pea").droppable({accept: '#pea-square'});
-      $(".corn").droppable({accept: '#corn-square'});
-      $(".beet").droppable({accept: '#beet-square'})
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(function() {
+        $(".veggie").draggable({
+          revert: 'invalid'
+        });
+        $(".veggie").draggable({
+          revert: 'invalid'
+        });
+        $(".plot").droppable({
+          accept: '.veggie',
+          helper: 'clone'
+        });
+        $(".carrot").droppable({
+          accept: '#carrot-square, #carrot-square2, #carrot-square3, #carrot-square4, #carrot-square5, #carrot-square6, #carrot-square7, #carrot-square8'
+        }); 
+        $(".cabbage").droppable({
+          accept: '#cabbage-square, #cabbage-square2, #cabbage-square3, #cabbage-square4, #cabbage-square5, #cabbage-square6, #cabbage-square7, #cabbage-square8'
+        });
+        $(".pea").droppable({
+          accept: '#pea-square, #pea-square2, #pea-square3, #pea-square4, #pea-square5, #pea-square6, #pea-square7, #pea-square8'
+        });
+        $(".corn").droppable({
+          accept: '#corn-square, #corn-square2, #corn-square3, #corn-square4, #corn-square5, #corn-square6, #corn-square7, #corn-square8'
+        });
+        $(".beet").droppable({
+          accept: '#beet-square, #beet-square2, #beet-square3, #beet-square4, #beet-square5, #beet-square6, #beet-square7, #beet-square8'
+        })
       });
-      });
-    </script>
+    });
+  </script>
 
-  </body>
+</body>
+
 </html>
