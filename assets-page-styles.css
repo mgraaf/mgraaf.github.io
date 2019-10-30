@@ -105,6 +105,50 @@ a:link {
 
 
 
+.signs {
+  width: 350px;
+  height: 500px;
+  float: left;
+  margin: 5px;
+  padding: 30px;
+  /* Background color: grey */
+  background-color: #efefef;
+}
+
+.signs:hover {
+  /* Background color: Cabbage Pale Green */
+  background-color: #96F982;
+}
+
+.signs h2 {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.signs li {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.signs li:hover {
+  /* Miss Fisher Gold */
+  color: #FFCC00;
+}
+
+.signs a:hover {
+  /* Dark Cabbage Green */
+  color: #167e0c;
+}
+
+
+
+
 
 .veggies-dirt {
   width: 350px;
