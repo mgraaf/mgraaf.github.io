@@ -21,11 +21,6 @@ a:link {
   float: left;
   margin: 5px;
   padding: 30px;
-  /* Background color: grey */
-  background-color: #efefef;
-}
-
-.project-one:hover {
   /* Background color: Wardlow Parlour Blue */
   background-color: #00DAF4;
 }
@@ -66,9 +61,6 @@ a:link {
   padding: 30px;
   /* Background color: grey */
   background-color: #efefef;
-}
-
-.project-two:hover {
   /* Background color: Cabbage Pale Green */
   background-color: #96F982;
 }
@@ -119,9 +111,6 @@ a:link {
   margin: 5px;
   padding: 30px;
   background-color: #efefef;
-}
-
-.exercises:hover {
   /* Raddish Red */
   background-color: #FF4051;
 }
@@ -161,9 +150,6 @@ a:link {
   margin: 5px;
   padding: 30px;
   background-color: #efefef;
-}
-
-.tutorials:hover {
   /* Frosted Blue */
   background-color: #b3d7fd;
 }
