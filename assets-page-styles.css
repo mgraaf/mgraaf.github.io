@@ -24,11 +24,6 @@ a:link {
   float: left;
   margin: 5px;
   padding: 30px;
-  /* Background color: grey */
-  background-color: #efefef;
-}
-
-.garden-plots:hover {
   /* Background color: Cabbage Pale Green */
   background-color: #96F982;
 }
@@ -67,11 +62,6 @@ a:link {
   float: left;
   margin: 5px;
   padding: 30px;
-  /* Background color: grey */
-  background-color: #efefef;
-}
-
-.garden-bits:hover {
   /* Background color: Cabbage Pale Green */
   background-color: #96F982;
 }
@@ -111,11 +101,6 @@ a:link {
   float: left;
   margin: 5px;
   padding: 30px;
-  /* Background color: grey */
-  background-color: #efefef;
-}
-
-.signs:hover {
   /* Background color: Cabbage Pale Green */
   background-color: #96F982;
 }
@@ -156,11 +141,6 @@ a:link {
   float: left;
   margin: 5px;
   padding: 30px;
-  /* Background color: grey */
-  background-color: #efefef;
-}
-
-.veggies-dirt:hover {
   /* Background color: Cabbage Pale Green */
   background-color: #96F982;
 }
@@ -200,11 +180,6 @@ a:link {
   float: left;
   margin: 5px;
   padding: 30px;
-  /* Background color: grey */
-  background-color: #efefef;
-}
-
-.veggies-clear:hover {
   /* Background color: Cabbage Pale Green */
   background-color: #96F982;
 }
@@ -245,11 +220,6 @@ a:link {
   float: left;
   margin: 5px;
   padding: 30px;
-  /* Background color: grey */
-  background-color: #efefef;
-}
-
-.gallery-cakes:hover {
   /* Background color: Cabbage Pale Green */
   background-color: #96F982;
 }
@@ -289,11 +259,6 @@ a:link {
   float: left;
   margin: 5px;
   padding: 30px;
-  /* Background color: grey */
-  background-color: #efefef;
-}
-
-.home:hover {
   /* Background color: Cabbage Pale Green */
   background-color: #96F982;
 }
