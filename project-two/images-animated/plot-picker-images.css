@@ -17,24 +17,38 @@ body {
   /* Sky Blue */
 }
 
+.nav-bar {
+  position: relative;
+  text-align: center;
+}
+
 .home-button {
   float: left;
 
-  width: 183px;
+  width: 195px;
   height: 81px;
 
-  margin-left: 12px;
+  margin-left: 0px;
 
   background-color: #96F982;
   /* Cabbage Green */
 
 }
 
-.nav-bar {
-  position: relative;
+.home-button a {
+  position: absolute;
+  top: 24px;
+  left: 61px;
 
-  text-align: center;
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
 
+  text-decoration: none;
+
+  color: white;
 }
 
 .title-card {
@@ -42,9 +56,6 @@ body {
 
   width: 378px;
   height: 81px;
-
-  background-color: #A84E0F;
-  /* Wood-brown, temporary sign */
 }
 
 .title-card h1 {
@@ -52,67 +63,48 @@ body {
   font-family: "blambot-fx-pro", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 42px;
+  font-size: 48px;
 
   color: white;
 
+  position: relative;
+  top: -102px;
 }
 
 .gallery-button {
   float: left;
 
-  width: 183px;
+  width: 195px;
   height: 81px;
 
   background-color: #96F982;
   /* Cabbage Green */
 }
 
-.home-button a {
-  position: absolute;
-  top: 30px;
-  left: 75px;
-
-  /* Blambot FX Pro Light Regular */
-  font-family: "blambot-fx-pro", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-
-  color: white;
-}
-
 .gallery-button a {
   position: absolute;
-  top: 30px;
-  right: 50px;
+  top: 24px;
+  right: 15px;
 
   /* Blambot FX Pro Light Regular */
   font-family: "blambot-fx-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 30px;
+  font-size: 36px;
+
+  text-decoration: none;
 
   color: white;
 }
 
 
 
-/* Modal trigger button */
-#myBtn {
-  /* Blambot FX Pro Light Regular */
-  font-family: "blambot-fx-pro", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-
-  color: black;
-}
 
 /* Modal header */
 .modal-header {
   padding: 2px 16px;
-  background-color: green;
+  background-color: #96F982;
+  /* Cabbage Green */
   color: white;
 }
 
@@ -123,7 +115,9 @@ body {
   font-style: normal;
   font-size: 32px;
 
-  color: white;
+  color: black;
+
+  text-align: center;
 }
 
 /* modal body */
@@ -148,9 +142,17 @@ body {
   font-family: "blambot-fx-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 35px;
 
-  color: black;
+  color: white;
+
+  position: relative;
+  top: -90px;
+  left: 183px;
+
+  background-color: rgba(0,0,0,0.2);
+
+  z-index: 99;
 }
 
 #square-button {
@@ -158,9 +160,27 @@ body {
   font-family: "blambot-fx-pro", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 20px;
+  font-size: 35px;
 
-  color: black;
+  color: white;
+
+  position: relative;
+  top: -90px;
+  right: -330px;
+
+  background-color: rgba(0,0,0,0.2);
+
+  z-index: 99;
+}
+
+#circle-modal{
+position: relative;
+left: -60px;
+}
+
+#square-modal {
+  position: relative;
+  left: -10px;
 }
 
 /* add animation */
@@ -190,14 +210,14 @@ body {
 
 /* modal content box */
 .modal-content {
-  background-color: #A84E0F;
-  /* Wood-brown, temporary sign */
+  background-color: #47CD3A;
+  /* Lettuce Green */
   margin: 15% auto;
   /* 15% from the top, centered */
   padding: 20px;
   border: 1px solid;
   width: 80%;
-  height: 200px;
+  height: 120px;
   /* increase or decrease width depending on screen size */
 }
 
@@ -292,41 +312,26 @@ body {
 #carrot-square {
   width: 88px;
   height: 88px;
-
-  background-color: orange;
-  /* Draggable square: Yellow */
 }
 
 #cabbage-square {
   width: 88px;
   height: 88px;
-
-  background-color: purple;
-  /* Draggable square: Yellow */
 }
 
 #pea-square {
   width: 88px;
   height: 88px;
-
-  background-color: green;
-  /* Draggable square: Yellow */
 }
 
 #corn-square {
   width: 88px;
   height: 88px;
-
-  background-color: yellow;
-  /* Draggable square: Yellow */
 }
 
 #beet-square {
   width: 88px;
   height: 88px;
-
-  background-color: red;
-  /* Draggable square: Yellow */
 }
 
 .plot-and-text {
@@ -338,25 +343,20 @@ body {
 .plot {
   float: right;
 
-  margin-bottom: 125px;
+  margin-top: 30px;
+  margin-bottom: 66px;
 
   width: 378px;
   height: 456px;
 
-  background-color: #C42AF0;
-  /* Temporary Image purple */
+  background-color: #37CFF6;
+  /* Sky Blue */
 }
 
-.plot p {
-  /* Blambot FX Pro Light Regular */
-  font-family: blambot-fx-pro, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-
-  color: white;
-
+#square-plot {
+  margin-left: -42px;
 }
+
 
 .body-text {
   float: right;
@@ -377,6 +377,8 @@ body {
   font-size: 20px;
 
   color: white;
+
+  padding: 10px;
 }
 
 #saveBtn {
@@ -409,28 +411,11 @@ body {
 
 .bunny {
   position: relative;
-  left: 609px;
-  bottom: 247px;
-
-  width: 88px;
-  height: 88px;
-
-  background-color: #C42AF0;
-  /* Temporary Image purple */
-}
-
-.bunny p {
-  /* Blambot FX Pro Light Regular */
-  font-family: blambot-fx-pro, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-
-  color: white;
+  left: 342px;
+  bottom: 244px;
 }
 
 /* Fonts:
-
 Comic Serif Pro
 font-family: comic-serif-pro, sans-serif;
 font-weight: 400;

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Build-a-Garden - Circle Garden </title>
+
+  <link rel="stylesheet" href="circle-plot.css"> <!-- link to stylesheet Fonts -->
+
+  <link rel="stylesheet" href="https://use.typekit.net/bax1kim.css"> <!-- link to Typekit Fonts -->
+
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script> <!-- drag and drop part 1/3 -->
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!-- drag and drop part 2/3 -->
+
+  <script src="../assets/colorblock-draggable.js" charset="utf-8"></script> <!-- drag and drop part 3/3 -->
+
+</head>
+
+<body>
+
+  <div class="everything">
+    <!-- content positioning div -->
+
+
+
+    <div class="nav-bar">
+      <!-- nav bar div -->
+
+      <div class="home-button"> <!-- home button div -->
+        <a href="welcome-images-animated.html">HOME</a>
+      </div> <!-- end home button div -->
+
+      <div class="title-card"> <!-- title card div -->
+        <img id="nav-sign"src="../assets/png/signs/nav-bar-sign.png" alt="A rectangular wooden sign">
+        <h1>In the Garden</h1>
+      </div> <!-- end title card div -->
+
+      <div class="gallery-button"> <!-- gallery button div -->
+        <a href="gallery-images-animated.html">VIEW GALLERY</a>
+      </div> <!-- end gallery button div -->
+
+    </div> <!-- end nav bar div -->
+
+    <div class="save-button">
+      <!-- save button div -->
+      <button id="saveBtn">Save</button>
+    </div> <!-- end save button div -->
+
+    <div class="restart-button">
+      <button id="restartBtn" value="Refresh Page" onClick="window.location.reload();">Restart</button>
+    </div>
+
+    <!-- end restart button div -->
+
+
+
+    <div class="sidebar-header">
+      <!-- sidebar header div -->
+      <h2>Plant Your Veggies! </h2>
+    </div> <!-- end sidebar header div -->
+
+    <div class="sidebar">
+      <!-- sidebar div -->
+
+      <div class="veggie-container">
+        <!-- veggie container div -->
+
+        <div class="carrot">
+          <!-- carrot div -->
+          <p>Carrots</p>
+          <div id="carrot-square-solid">
+            <img src="../assets/png/scaled-veggies-with-dirt/carrot-ground.png" alt="Crossed carrots on dirt">
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="carrot-square">
+            <img src="../assets/png/scaled-veggies-clear/carrot-no-dirt.png" alt="Crossed carrots">
+          </div>
+          <div class="veggie" id="carrot-square2">
+            <img src="../assets/png/scaled-veggies-clear/carrot-no-dirt.png" alt="Crossed carrots">
+          </div>
+          <div class="veggie" id="carrot-square3">
+            <img src="../assets/png/scaled-veggies-clear/carrot-no-dirt.png" alt="Crossed carrots">
+          </div>
+          <div class="veggie" id="carrot-square4">
+            <img src="../assets/png/scaled-veggies-clear/carrot-no-dirt.png" alt="Crossed carrots">
+          </div>
+          <div class="veggie" id="carrot-square5">
+            <img src="../assets/png/scaled-veggies-clear/carrot-no-dirt.png" alt="Crossed carrots">
+          </div>
+          <div class="veggie" id="carrot-square6">
+            <img src="../assets/png/scaled-veggies-clear/carrot-no-dirt.png" alt="Crossed carrots">
+          </div>
+          <div class="veggie" id="carrot-square7">
+            <img src="../assets/png/scaled-veggies-clear/carrot-no-dirt.png" alt="Crossed carrots">
+          </div>
+          <div class="veggie" id="carrot-square8">
+            <img src="../assets/png/scaled-veggies-clear/carrot-no-dirt.png" alt="Crossed carrots">
+          </div>
+        </div> <!-- end carrot div -->
+
+        <div class="cabbage">
+          <!-- cabbage div -->
+          <p>Cabbage</p>
+          <div id="cabbage-square-solid">
+            <img src="../assets/png/scaled-veggies-with-dirt/cabbage-ground.png" alt="Cabbage on dirt">
+          </div>
+          <div class="veggie" id="cabbage-square">
+            <img src="../assets/png/scaled-veggies-clear/cabbage-no-dirt.png" alt="A cabbage">
+          </div>
+          <div class="veggie" id="cabbage-square2">
+            <img src="../assets/png/scaled-veggies-clear/cabbage-no-dirt.png" alt="A cabbage">
+          </div>
+          <div class="veggie" id="cabbage-square3">
+            <img src="../assets/png/scaled-veggies-clear/cabbage-no-dirt.png" alt="A cabbage">
+          </div>
+          <div class="veggie" id="cabbage-square4">
+            <img src="../assets/png/scaled-veggies-clear/cabbage-no-dirt.png" alt="A cabbage">
+          </div>
+          <div class="veggie" id="cabbage-square5">
+            <img src="../assets/png/scaled-veggies-clear/cabbage-no-dirt.png" alt="A cabbage">
+          </div>
+          <div class="veggie" id="cabbage-square6">
+            <img src="../assets/png/scaled-veggies-clear/cabbage-no-dirt.png" alt="A cabbage">
+          </div>
+          <div class="veggie" id="cabbage-square7">
+            <img src="../assets/png/scaled-veggies-clear/cabbage-no-dirt.png" alt="A cabbage">
+          </div>
+          <div class="veggie" id="cabbage-square8">
+            <img src="../assets/png/scaled-veggies-clear/cabbage-no-dirt.png" alt="A cabbage">
+          </div>
+        </div> <!-- end cabbage div -->
+
+        <div class="pea">
+          <!-- pea div -->
+          <p>Pea</p>
+          <div id="pea-square-solid">
+            <img src="../assets/png/scaled-veggies-with-dirt/pea-ground.png" alt="Pea on dirt">
+          </div>
+          <div class="veggie" id="pea-square">
+            <img src="../assets/png/scaled-veggies-clear/pea-no-dirt.png" alt="A pea">
+          </div>
+          <div class="veggie" id="pea-square2">
+            <img src="../assets/png/scaled-veggies-clear/pea-no-dirt.png" alt="A pea">
+          </div>
+          <div class="veggie" id="pea-square3">
+            <img src="../assets/png/scaled-veggies-clear/pea-no-dirt.png" alt="A pea">
+          </div>
+          <div class="veggie" id="pea-square4">
+            <img src="../assets/png/scaled-veggies-clear/pea-no-dirt.png" alt="A pea">
+          </div>
+          <div class="veggie" id="pea-square5">
+            <img src="../assets/png/scaled-veggies-clear/pea-no-dirt.png" alt="A pea">
+          </div>
+          <div class="veggie" id="pea-square6">
+            <img src="../assets/png/scaled-veggies-clear/pea-no-dirt.png" alt="A pea">
+          </div>
+          <div class="veggie" id="pea-square7">
+            <img src="../assets/png/scaled-veggies-clear/pea-no-dirt.png" alt="A pea">
+          </div>
+          <div class="veggie" id="pea-square8">
+            <img src="../assets/png/scaled-veggies-clear/pea-no-dirt.png" alt="A pea">
+          </div>
+        </div> <!-- end pea div -->
+
+        <div class="corn">
+          <!-- corn div -->
+          <p>Corn</p>
+          <div id="corn-square-solid">
+            <img src="../assets/png/scaled-veggies-with-dirt/corn-ground.png" alt="Corn on dirt">
+          </div>
+          <div class="veggie" id="corn-square2">
+            <img src="../assets/png/scaled-veggies-clear/corn-no-dirt.png" alt="An ear of corn">
+          </div>
+          <div class="veggie" id="corn-square3">
+            <img src="../assets/png/scaled-veggies-clear/corn-no-dirt.png" alt="An ear of corn">
+          </div>
+          <div class="veggie" id="corn-square4">
+            <img src="../assets/png/scaled-veggies-clear/corn-no-dirt.png" alt="An ear of corn">
+          </div>
+          <div class="veggie" id="corn-square5">
+            <img src="../assets/png/scaled-veggies-clear/corn-no-dirt.png" alt="An ear of corn">
+          </div>
+          <div class="veggie" id="corn-square6">
+            <img src="../assets/png/scaled-veggies-clear/corn-no-dirt.png" alt="An ear of corn">
+          </div>
+          <div class="veggie" id="corn-square7">
+            <img src="../assets/png/scaled-veggies-clear/corn-no-dirt.png" alt="An ear of corn">
+          </div>
+          <div class="veggie" id="corn-square8">
+            <img src="../assets/png/scaled-veggies-clear/corn-no-dirt.png" alt="An ear of corn">
+          </div>
+        </div> <!-- end corn div -->
+
+        <div class="beet">
+          <!-- beet div -->
+          <p>Beet</p>
+          <div id="beet-square-solid">
+            <img src="../assets/png/scaled-veggies-with-dirt/beet-ground.png" alt="Beet on dirt">
+          </div>
+          <div class="veggie" id="beet-square2">
+            <img src="../assets/png/scaled-veggies-clear/beet-no-dirt.png" alt="A beet">
+          </div> <!-- end temporary carrot image div -->
+          <div class="veggie" id="beet-square3">
+            <img src="../assets/png/scaled-veggies-clear/beet-no-dirt.png" alt="A beet">
+          </div>
+          <div class="veggie" id="beet-square4">
+            <img src="../assets/png/scaled-veggies-clear/beet-no-dirt.png" alt="A beet">
+          </div>
+          <div class="veggie" id="beet-square5">
+            <img src="../assets/png/scaled-veggies-clear/beet-no-dirt.png" alt="A beet">
+          </div>
+          <div class="veggie" id="beet-square6">
+            <img src="../assets/png/scaled-veggies-clear/beet-no-dirt.png" alt="A beet">
+          </div>
+          <div class="veggie" id="beet-square7">
+            <img src="../assets/png/scaled-veggies-clear/beet-no-dirt.png" alt="A beet">
+          </div>
+          <div class="veggie" id="beet-square8">
+            <img src="../assets/png/scaled-veggies-clear/beet-no-dirt.png" alt="A beet">
+          </div> 
+        </div> <!-- end beet div -->
+
+      </div> <!-- end veggie container div -->
+
+    </div> <!-- end sidebar div -->
+
+
+
+    <div class="plot-and-text">
+      <!-- plot and text div -->
+      <div class="plot">
+        <!-- garden plot div -->
+        <img id="circle-plot" src="../assets/png/plots/circle-plot.png" alt="A circular garden bordered by a white picket fence">
+      </div> <!-- end garden plot div -->
+
+      <div class="body-text">
+        <!-- body text div -->
+        <p>Drag and drop your favorite vegetables to plant your own garden! Save it when you’re done, or clear away the vegetables and start over again.</p>
+      </div> <!-- end body text div -->
+
+    </div> <!-- end plot and text div -->
+
+
+
+    <div class="bunny"> <!-- bunny div -->
+      <img src="../assets/png/scaled-garden-bits/sized-bunny.png" alt="A white bunny with bright black eyes and a fluffy little tail">
+    </div>
+
+
+
+  </div> <!-- end content positioning div -->
+
+
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(function() {
+        $(".veggie").draggable({
+          revert: 'invalid'
+        });
+        $(".veggie").draggable({
+          revert: 'invalid'
+        });
+        $(".plot").droppable({
+          accept: '.veggie',
+          helper: 'clone'
+        });
+        $(".carrot").droppable({
+          accept: '#carrot-square, #carrot-square2, #carrot-square3, #carrot-square4, #carrot-square5, #carrot-square6, #carrot-square7, #carrot-square8'
+        });
+        $(".cabbage").droppable({
+          accept: '#cabbage-square, #cabbage-square2, #cabbage-square3, #cabbage-square4, #cabbage-square5, #cabbage-square6, #cabbage-square7, #cabbage-square8'
+        });
+        $(".pea").droppable({
+          accept: '#pea-square, #pea-square2, #pea-square3, #pea-square4, #pea-square5, #pea-square6, #pea-square7, #pea-square8'
+        });
+        $(".corn").droppable({
+          accept: '#corn-square, #corn-square2, #corn-square3, #corn-square4, #corn-square5, #corn-square6, #corn-square7, #corn-square8'
+        });
+        $(".beet").droppable({
+          accept: '#beet-square, #beet-square2, #beet-square3, #beet-square4, #beet-square5, #beet-square6, #beet-square7, #beet-square8'
+        })
+      });
+    });
+  </script>
+
+</body>
+
+</html>
