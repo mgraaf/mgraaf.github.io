@@ -1,0 +1,190 @@
+/* Body Div */
+body {
+  padding: 0;
+
+  background-color: #E5FAFF;
+  /* Palest Blue */
+
+  overflow-x: hidden;
+  }
+
+/* Div containing all content */
+ .everything {
+  width: 768px;
+  height: 1024px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #ACEEFF;
+  /* Winter Sky Blue */
+}
+
+.header {
+  position: relative;
+  height: 375px;
+  text-align: center;
+
+  background-color: #ACEEFF;
+  /* Winter Sky Blue */
+}
+
+.header-sign {
+  position: absolute;
+  top: -168px;
+  left: 80px;
+}
+
+.header-text-one h1 {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+
+  color: white;
+
+  position: absolute;
+  left: 247px;
+  top: 237px;
+}
+
+.header-text-two h1 {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 95px;
+
+  color: white;
+
+  position: absolute;
+  left: 251px;
+  top: 242px;
+}
+
+.tree-branch {
+  position: absolute;
+  top: 20px;
+  height: 150px;
+  width: 750px;
+}
+
+.branch-image {
+  position: absolute;
+  top: -95px;
+  left: -35px;
+}
+
+
+.build-image {
+  position: relative;
+  height: 50px;
+  width: 140px;
+
+  left: 45px;
+  bottom: -267px;
+
+  z-index: 98;
+}
+
+.build-button {
+  margin-left: 155px;
+  margin-right: 257px;
+
+  z-index: 99;
+}
+
+.build-button a {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+
+  text-decoration: none;
+  color: white;
+
+  position: relative;
+  left: -94px;
+  top: 255px;
+
+  z-index: 99
+}
+
+.gallery-image {
+  position: relative;
+  height: 50px;
+  width: 160px;
+
+  left: 418px;
+  bottom: -351px;
+}
+
+.gallery-button {
+  z-index: 99;
+}
+
+.gallery-button a {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+
+  text-decoration: none;
+  color: white;
+
+  position: relative;
+  left: 479px;
+  top: 343px;
+
+  z-index: 99;
+}
+
+.shovel {
+  position: relative;
+  left: 70px;
+  top: -150px;
+}
+
+.robin {
+  position: relative;
+  left: 58px;
+  bottom: 950px;
+}
+
+.fox {
+  position: relative;
+  left: 539px;
+  bottom: 751px;
+}
+
+/* Fonts:
+
+Comic Serif Pro
+font-family: comic-serif-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Blambot FX Pro Light Regular
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Blambot FX Pro Light Italic
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Blambot FX Pro Heavy Regular
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Blambot FX Pro Heavy Italic
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+ */
