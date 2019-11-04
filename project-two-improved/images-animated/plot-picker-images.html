@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Build-a-Garden - Pick Your Plot </title>
+
+    <link rel="stylesheet" href="plot-picker-images.css"> <!-- link to stylesheet Fonts -->
+
+    <link rel="stylesheet" href="https://use.typekit.net/bax1kim.css"> <!-- link to Typekit Fonts -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- Script to get stuff to do things -->
+
+  </head>
+
+  <!-- Modal pops up over this page to pick size of plot - see script tag section at the end of the body div -->
+
+  <body>
+
+    <div class="everything"> <!-- content positioning div -->
+
+      <div class="ground">
+
+      </div>
+
+      <div class="nav-bar"> <!-- nav bar div -->
+
+        <div class="home-button"> <!-- home button div -->
+          <a href="welcome-images-animated.html">HOME</a>
+        </div> <!-- end home button div -->
+
+        <div class="title-card"> <!-- title card div -->
+          <img id="nav-sign"src="../assets/png/signs/nav-bar-sign.png" alt="A rectangular wooden sign">
+          <h1>In the Garden</h1>
+        </div> <!-- end title card div -->
+
+        <div class="gallery-button"> <!-- gallery button div -->
+          <a href="gallery-images-animated.html">VIEW GALLERY</a>
+        </div> <!-- end gallery button div -->
+
+      </div> <!-- end nav bar div -->
+
+
+      <!-- The modal itself -->
+      <div id="myModal" class="modal block"> <!-- modal container -->
+
+        <!-- Modal content -->
+        <div class="modal-content">
+
+          <div class="modal-header"> <!-- modal header -->
+            <h2>Pick the shape of your garden! </h2>
+          </div> <!-- end modal header -->
+
+          <div class="modal-body"> <!-- modal body content -->
+            <button id="circle-button" onclick="window.location.href = 'circle-plot-images.html';">Circle</button>
+
+            <button id="square-button" onclick="window.location.href = 'square-plot-images.html';">Square</button>
+
+            <img id="circle-modal" src="../assets/png/plots/circle-modal.png" alt="A circular garden bordered by a picket fence">
+
+            <img id="square-modal" src="../assets/png/plots/square-modal.png" alt="A square garden bordered by a picket fence">
+          </div> <!-- end modal body content -->
+
+        </div>
+        <!-- End Modal content -->
+
+      </div> <!-- End Modal itself -->
+
+
+
+
+
+      <div class="restart-button"> <!-- restart button div -->
+        <button id="restartBtn">Restart</button>
+      </div> <!-- end restart button div -->
+
+
+
+      <div class="sidebar-header"> <!-- sidebar header div -->
+        <h2>Plant Your Veggies! </h2>
+      </div> <!-- end sidebar header div -->
+
+      <div class="sidebar"> <!-- sidebar div -->
+
+        <div class="veggie-container"> <!-- veggie container div -->
+
+          <div class="carrot"> <!-- carrot div -->
+            <p>Carrots</p>
+            <div id="carrot-square"> <!-- temporary carrot image div -->
+              <img src="../assets/png/scaled-veggies-with-dirt/carrot-ground.png" alt="A pair of carrots, crossed to form a vaguely-X-looking shape">
+            </div> <!-- end temporary carrot image div -->
+          </div> <!-- end carrot div -->
+
+          <div class="cabbage"> <!-- cabbage div -->
+            <p>Cabbage</p>
+            <div id="cabbage-square"> <!-- temporary cabbage image div -->
+              <img src="../assets/png/scaled-veggies-with-dirt/cabbage-ground.png" alt="A plump green cabbage">
+            </div> <!-- end temporary cabbage image div -->
+          </div> <!-- end cabbage div -->
+
+          <div class="pea"> <!-- pea div -->
+            <p>Pea</p>
+            <div id="pea-square"> <!-- temporary pea image div -->
+              <img src="../assets/png/scaled-veggies-with-dirt/pea-ground.png" alt="A bright green pea">
+            </div> <!-- end temporary pea image div -->
+          </div> <!-- end pea div -->
+
+          <div class="corn"> <!-- corn div -->
+            <p>Corn</p>
+            <div id="corn-square"> <!-- temporary corn image div -->
+              <img src="../assets/png/scaled-veggies-with-dirt/corn-ground.png" alt="A golden ear of corn, sheathed in dark green leaves">
+            </div> <!-- end temporary corn image div -->
+          </div> <!-- end corn div -->
+
+          <div class="beet"> <!-- beet div -->
+            <p>Beet</p>
+            <div id="beet-square"> <!-- temporary beet image div -->
+              <img src="../assets/png/scaled-veggies-with-dirt/beet-ground.png" alt="A shiny red beet with bright green leaves sprouting from its top">
+            </div> <!-- end temporary beet image div -->
+          </div> <!-- end beet div -->
+
+        </div> <!-- end veggie container div -->
+
+      </div> <!-- end sidebar div -->
+
+
+
+      <div class="plot-and-text"> <!-- plot and text div -->
+        <div class="plot"> <!-- garden plot div -->
+          <img id="square-plot" src="../assets/png/plots/square-plot.png" alt="A square garden bordered by a white picket fence">
+        </div> <!-- end garden plot div -->
+
+        <div class="body-text"> <!-- body text div -->
+          <p>Drag and drop your favorite vegetables to plant your own garden! Save it when you’re done, or clear away the vegetables and start over again.</p>
+      </div> <!-- end body text div -->
+
+    </div> <!-- end plot and text div -->
+
+
+
+      <div class="bunny"> <!-- bunny div -->
+        <img src="../assets/png/scaled-garden-bits/sized-bunny.png" alt="A white bunny with bright black eyes and a fluffy little tail">
+      </div>
+
+
+
+    </div> <!-- end content positioning div -->
+
+
+
+    <!-- JavaScript to close modal -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('.close').click(function() {
+        $("#myModal").removeClass("block");
+      });
+    });
+    </script>
+
+
+
+  </body>
+</html>
