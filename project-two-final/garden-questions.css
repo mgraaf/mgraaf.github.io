@@ -1,0 +1,9 @@
+.done {
+  text-decoration: line-through;
+  color: green;
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+}

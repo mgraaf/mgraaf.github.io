@@ -1,0 +1,474 @@
+/* Body Div */
+body {
+  padding: 0;
+
+  background-color: #E5FAFF;
+  /* Palest Blue */
+
+  overflow-x: hidden;
+
+}
+
+/* Div containing all content */
+.everything {
+  width: 768px;
+  height: 1024px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #ACEEFF;
+  /* Winter Sky Blue */
+}
+
+.nav-bar {
+  position: relative;
+  text-align: center;
+}
+
+.home-button {
+  float: left;
+
+  width: 195px;
+  height: 81px;
+
+  margin-left: 0px;
+
+  background-color: #A8F7A0;
+  /* Frosted Dark Green */
+
+}
+
+.home-button a {
+  position: absolute;
+  top: 24px;
+  left: 61px;
+
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+
+  text-decoration: none;
+
+  color: white;
+}
+
+.title-card {
+  float: left;
+
+  width: 378px;
+  height: 81px;
+}
+
+.title-card h1 {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+
+  color: white;
+
+  position: relative;
+  top: -102px;
+}
+
+.gallery-button {
+  float: left;
+
+  width: 195px;
+  height: 81px;
+
+  background-color: #A8F7A0;
+  /* Frosted Dark Green */
+}
+
+.gallery-button a {
+  position: absolute;
+  top: 24px;
+  right: 15px;
+
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+
+  text-decoration: none;
+
+  color: white;
+}
+
+
+#myBtn {
+  width: 168px;
+  height: 68px;
+  border-radius: 10%;
+
+  position: absolute;
+  top: -44px;
+  left: 570px;
+
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: white;
+
+  background-color: #fc8042;
+  border: 2px solid white;
+
+  z-index: 99;
+}
+
+/* The Modal (background) */
+.modal-one {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content-one {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+  background-color: #d3ffcb;
+}
+
+.modal-content-one p {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+.sidebar {
+  float: left;
+
+  width: 248px;
+  height: 766px;
+
+  background-color: #D3FFCB;
+  /* Frosted Pale Green */
+
+  position: relative;
+  z-index: 98;
+
+}
+
+.sidebar-header {
+
+  text-align: center;
+
+  width: 248px;
+  height: 34px;
+
+  background-color: #A8F7A0;
+  /* Frosted Dark Green */
+}
+
+.sidebar-header h2 {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+
+  color: black;
+}
+
+.veggie-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  z-index: 98;
+}
+
+.carrot p {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+}
+
+.cabbage p {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+}
+
+.pea p {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+}
+
+.corn p {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+}
+
+.beet p {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+}
+
+#carrot-square-solid {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+}
+
+#carrot-square, #carrot-square2, #carrot-square3, #carrot-square4, #carrot-square5, #carrot-square6, #carrot-square7 {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+}
+
+#carrot-square8 {
+  width: 88px;
+  height: 88px;
+}
+
+#cabbage-square-solid {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+}
+
+#cabbage-square, #cabbage-square2, #cabbage-square3, #cabbage-square4, #cabbage-square5, #cabbage-square6, #cabbage-square7 {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+}
+
+#cabbage-square8 {
+  width: 88px;
+  height: 88px;
+}
+
+#pea-square-solid {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+}
+
+#pea-square, #pea-square2, #pea-square3, #pea-square4, #pea-square5, #pea-square6, #pea-square7 {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+}
+
+#pea-square8 {
+  width: 88px;
+  height: 88px;
+}
+
+#corn-square-solid {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+}
+
+#corn-square, #corn-square2, #corn-square3, #corn-square4, #corn-square5, #corn-square6, #corn-square7 {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+}
+
+#corn-square8 {
+  width: 88px;
+  height: 88px;
+}
+
+#beet-square-solid {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+}
+
+#beet-square, #beet-square2, #beet-square3, #beet-square4, #beet-square5, #beet-square6, #beet-square7 {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+}
+
+#beet-square8 {
+  width: 88px;
+  height: 88px;
+}
+
+.plot-and-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ground {
+  width: 768px;
+  height: 610px;
+
+  position: absolute;
+  top: 422px;
+
+  background-color: #A8F7A0;
+  /* Frosted Dark Green */
+
+  z-index: 1;
+}
+
+.plot {
+  float: right;
+
+  margin-top: 30px;
+  margin-bottom: 66px;
+
+  width: 378px;
+  height: 456px;
+
+  z-index: 97;
+}
+
+#circle-plot {
+  margin-left: -60px;
+}
+
+.body-text {
+  float: right;
+
+  width: 378px;
+  height: 139px;
+
+  background-color: #A84E0F;
+  /* Wood-brown, temporary sign */
+
+  position: relative;
+  z-index: 97;
+
+}
+
+.body-text p {
+  /* Blambot FX Pro Light Regular */
+  font-family: blambot-fx-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+  color: white;
+
+  padding: 10px;
+}
+
+#restartBtn {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+  color: black;
+
+  position: relative;
+  left: 475px;
+  top: 78px;
+}
+
+.bunny {
+  position: relative;
+  left: 342px;
+  bottom: 244px;
+
+  z-index: 97;
+}
+
+/* Fonts:
+
+Comic Serif Pro
+font-family: comic-serif-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Blambot FX Pro Light Regular
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Blambot FX Pro Light Italic
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 400;
+font-style: italic;
+
+Blambot FX Pro Heavy Regular
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 700;
+font-style: normal;
+
+Blambot FX Pro Heavy Italic
+font-family: blambot-fx-pro, sans-serif;
+font-weight: 700;
+font-style: italic;
+
+ */
