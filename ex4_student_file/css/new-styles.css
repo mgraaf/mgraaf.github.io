@@ -222,6 +222,13 @@ footer dd {
     justify-content: space-between;
     color: #0C2340;
   }
+
+  footer .footer-info {
+    width: 864px;
+    text-align: left;
+    padding: 52px 0px;
+    box-sizing: border-box;
+  }
 }
 
 /***********************************/
