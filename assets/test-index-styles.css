@@ -59,8 +59,6 @@ a:link {
   float: left;
   margin: 5px;
   padding: 30px;
-  /* Background color: grey */
-  background-color: #efefef;
   /* Background color: Cabbage Pale Green */
   background-color: #96F982;
 }
@@ -98,6 +96,39 @@ a:link {
 .project-two a:hover {
   /* Dark Cabbage Green */
   color: #167e0c;
+}
+
+
+
+
+.project-three {
+  width: 350px;
+  height: 600px;
+  float: left;
+  margin: 5px;
+  padding: 30px;
+  background-color: pink;
+}
+
+.project-three h2 {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.project-three li {
+  font-size: 20px;
+}
+
+.project-three li:hover {
+  /* Miss Fisher Gold */
+  color: #FFCC00;
+}
+
+.project-three a:hover {
+  color: red;
 }
 
 
