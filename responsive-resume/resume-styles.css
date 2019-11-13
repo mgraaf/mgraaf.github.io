@@ -1,14 +1,116 @@
 /* Main styling: desinged for mobile, specifically iPhone X */
 body {
-  background-color: blue;
+  width: 100%;
 }
 
-/* Desktop Media Query */
-@media only screen and (min-width:960px) {
+h1 {
+  /* Source Sans Pro Extra Light */
+  font-family: "source-sans-pro", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 55px;
+  text-transform: uppercase;
 
+  text-align: center;
+}
+
+h2 {
+  /* Nimbus Roman Regular */
+  font-family: "nimbus-roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+h3 {
+  /* DIN Condensed Regular */
+  font-family: "din-condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+
+  text-align: center;
+}
+
+h4 {
+  /* DIN Condensed Regular */
+  font-family: "din-condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+}
+
+h5 {
+  /* Roboto Light */
+  font-family: "roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 13px;
+}
+
+p {
+  /* Roboto Light */
+  font-family: "roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 12px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading h1 {
+  margin-bottom: 0em;
 }
 
 /* iPad Media Query */
 @media only screen and (min-width:500px) and (max-width:768px) {
-
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
 }
+
+/* Desktop Media Query */
+@media only screen and (min-width:960px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+
+  h1 {
+    text-align: right;
+    margin-right: 1em
+  }
+
+  h3 {
+    text-align: right;
+    margin-right: 3em;
+  }
+}
+
+
+
+/* Font Repository
+
+H1: Source Sans Pro Extra Light
+font-family: source-sans-pro, sans-serif;
+font-weight: 200;
+font-style: normal;
+
+Section Headers: Nimbus Roman Regular
+font-family: nimbus-roman, serif;
+font-weight: 400;
+font-style: normal;
+
+Subhead and locations: DIN Condensed Regular
+font-family: din-condensed, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Dates and Descriptions: Roboto Light
+font-family: roboto, sans-serif;
+font-weight: 300;
+font-style: normal;
+
+*/
