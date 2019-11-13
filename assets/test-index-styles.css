@@ -101,36 +101,6 @@ a:link {
 
 
 
-.project-three {
-  width: 350px;
-  height: 600px;
-  float: left;
-  margin: 5px;
-  padding: 30px;
-  background-color: pink;
-}
-
-.project-three h2 {
-  font-size: 30px;
-}
-
-.project-three li {
-  font-size: 20px;
-}
-
-.project-three li:hover {
-  /* Miss Fisher Gold */
-  color: #FFCC00;
-}
-
-.project-three a:hover {
-  color: red;
-}
-
-
-
-
-
 .exercises {
   width: 350px;
   height: 600px;
