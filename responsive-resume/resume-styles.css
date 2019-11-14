@@ -3,6 +3,8 @@ body {
   width: 100%;
 }
 
+/* Font and Text Alignment Formatting */
+
 h1 {
   /* Source Sans Pro Extra Light */
   font-family: "source-sans-pro", sans-serif;
@@ -20,6 +22,8 @@ h2 {
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
+
+  text-align: center;
 }
 
 h3 {
@@ -56,6 +60,8 @@ p {
   font-size: 12px;
 }
 
+/* Name and header formatting */
+
 .heading {
   display: flex;
   flex-direction: column;
@@ -64,6 +70,169 @@ p {
 .heading h1 {
   margin-bottom: 0em;
 }
+
+.heading h3 {
+  margin-top: 0em;
+}
+
+/* Education section */
+
+.education h2 {
+  margin-bottom: 0.3em;
+}
+
+#college {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+#college h4, h5, p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+#high-school {
+  display: flex;
+  flex-direction: column;
+}
+
+#high-school h4, h5, p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+/* Work History section */
+
+.work-history h2 {
+  margin-bottom: 0.3em;
+}
+
+#work {
+  display: flex;
+  flex-direction: column;
+}
+
+#work h4, h5, p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+/* Awards and Activities section */
+
+.awards h2 {
+  margin-bottom: 0.3em;
+}
+
+#seafair {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+#seafair h4, h5, p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+#engineering {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+#engineering h4, h5, p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+#ace-mentor {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+#ace-mentor h4, h5, p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+#merit {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+#merit h4, h5, p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+#second-face {
+  display: flex;
+  flex-direction: column;
+}
+
+#second-face h4, h5, p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+/* Athletics section */
+
+.athletics h2 {
+  margin-bottom: 0.3em;
+}
+
+#dance {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+#dance h4, h5, p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+#volleyball {
+  display: flex;
+  flex-direction: column;
+}
+
+#volleyball h4, h5, p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
+
+.skills h2 {
+  margin-bottom: 0.3em;
+}
+
+#skill-set {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+#skill-set h4 {
+  margin-top: 0.2em;
+  margin-bottom: 2em;
+}
+
+#portfolio {
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  margin-top: -2em;
+  margin-bottom: 0.2em;
+}
+
 
 /* iPad Media Query */
 @media only screen and (min-width:500px) and (max-width:768px) {
@@ -78,6 +247,7 @@ p {
     background-color: #F09A9D; /* Red */
   }
 
+  /* Name and Intent */
   h1 {
     text-align: right;
     margin-right: 1em
@@ -86,6 +256,70 @@ p {
   h3 {
     text-align: right;
     margin-right: 3em;
+  }
+
+  /* Education */
+  .education h2 {
+    text-align: left;
+    margin-left: 0.5em;
+  }
+
+  #college, #high-school {
+    margin-left: 1em;
+  }
+
+  /* Work History */
+  .work-history h2 {
+    text-align: right;
+    margin-right: 0.5em;
+  }
+
+  #work {
+    text-align: right;
+    margin-right: 1em;
+  }
+
+  /* Awards and Activities */
+  .awards h2 {
+    text-align: left;
+    margin-left: 0.5em;
+  }
+
+  #seafair, #engineering, #ace-mentor, #merit, #second-face {
+    margin-left: 1em;
+  }
+
+  /* Athletics */
+  .athletics h2 {
+    text-align: right;
+    margin-right: 0.5em;
+  }
+
+  #dance, #volleyball {
+    text-align: right;
+    margin-right: 1em;
+  }
+
+  /* Skills */
+  .skills h2 {
+    text-align: left;
+    margin-left: 0.5em;
+  }
+
+  #skill-set {
+    margin-left: 1em;
+  }
+
+  /* Footer contact Info */
+  .contact {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+  }
+
+  .contact p {
+    margin: 0em 2em 0em 2em;
   }
 }
 
