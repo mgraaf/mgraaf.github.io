@@ -229,23 +229,20 @@ p {
   flex-direction: column;
   text-align: center;
 
-  margin-top: -2em;
+  margin-top: 1em;
   margin-bottom: 0.2em;
 }
 
 
+
 /* iPad Media Query */
 @media only screen and (min-width:500px) and (max-width:768px) {
-  body {
-    background-color: #F5CF8E; /* Yellow */
-  }
 }
+
+
 
 /* Desktop Media Query */
 @media only screen and (min-width:960px) {
-  body {
-    background-color: #F09A9D; /* Red */
-  }
 
   /* Name and Intent */
   h1 {
@@ -259,6 +256,7 @@ p {
   }
 
   /* Education */
+
   .education h2 {
     text-align: left;
     margin-left: 0.5em;
@@ -266,6 +264,7 @@ p {
 
   #college, #high-school {
     margin-left: 1em;
+    margin-right: 50%;
   }
 
   /* Work History */
@@ -277,6 +276,7 @@ p {
   #work {
     text-align: right;
     margin-right: 1em;
+    margin-left: 50%;
   }
 
   /* Awards and Activities */
@@ -287,6 +287,7 @@ p {
 
   #seafair, #engineering, #ace-mentor, #merit, #second-face {
     margin-left: 1em;
+    margin-right: 50%;
   }
 
   /* Athletics */
@@ -298,6 +299,7 @@ p {
   #dance, #volleyball {
     text-align: right;
     margin-right: 1em;
+    margin-left: 50%;
   }
 
   /* Skills */
@@ -308,6 +310,18 @@ p {
 
   #skill-set {
     margin-left: 1em;
+    margin-right: 50%;
+    margin-bottom: 0.5em;
+  }
+
+  /* Portfolio */
+
+  #portfolio {
+    text-align: left;
+    margin-top: -1em;
+    margin-left: 1em;
+    margin-right: 50%;
+    margin-bottom: 4em;
   }
 
   /* Footer contact Info */
@@ -316,6 +330,8 @@ p {
     flex-direction: row;
 
     justify-content: center;
+
+    margin-top: -2em;
   }
 
   .contact p {
