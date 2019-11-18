@@ -233,7 +233,10 @@ p {
   margin-bottom: 0.2em;
 }
 
-
+#picture {
+  display: flex;
+  margin: 0 auto;
+}
 
 /* iPad Media Query */
 @media only screen and (min-width:500px) and (max-width:768px) {
