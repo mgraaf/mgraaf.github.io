@@ -1,0 +1,161 @@
+/* Main styling: desinged for mobile, specifically iPhone 6/7/8 Plus */
+
+/* Body Div */
+body {
+  margin: 0 auto;
+  padding: 0;
+
+  background-color: #ACEEFF;
+  /* Winter Sky Blue */
+
+  overflow-x: hidden;
+}
+
+/* Div containing all content */
+ .everything {
+  width: 414px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: white;
+
+  padding-bottom: 30px;
+}
+
+#figure-header, #figure-two, #figure-three, #figure-four, #figure-five, #figure-six, #figure-seven, #figure-eight {
+  margin-left: 0px;
+}
+
+h1 {
+  /* Interstate Regular */
+  font-family: "interstate", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+
+  margin-left: 18px;
+
+  text-transform: uppercase;
+
+  margin-top: -72px;
+}
+
+#line-one {
+  color: white;
+}
+
+#line-two, #line-three {
+  margin-top: -25px;
+}
+
+#header-image {
+  margin: 0 0 0 0;
+}
+
+figcaption {
+  /* Omnes Cyrillic Narrow ExtraLight */
+  font-family: "omnes-cyrillic-narrow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  text-align: right;
+
+  margin-right: -31px;
+}
+
+#byline {
+  /* Omnes Cyrillic Narrow ExtraLight */
+  font-family: "omnes-cyrillic-narrow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+
+  text-align: center;
+
+  margin-top: -15px;
+}
+
+h2 {
+  /* Fenway Park JF */
+  font-family: "fenway-park-jf", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+
+  margin-left: 33px;
+}
+
+p {
+  /* LTC Caslon Pro Regular, body for all formats */
+  font-family: "ltc-caslon-pro", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+
+  margin-left: 33px;
+  margin-right: 33px;
+}
+
+/* iPad Media Query */
+@media only screen and (min-width:500px) and (max-width:960px) {
+}
+
+/* Desktop Media Query */
+@media only screen and (min-width:960px) {
+}
+
+
+/* Font Reference List
+
+  Interstate Regular, H1 for all formats
+    Mobile: ~32px, broken into three lines
+    Tablet: ~32px, broken into two lines
+    Desktop: ~80px, broken into two lines
+  font-family: interstate, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  Fenway Park JF, H2 for all formats
+    Mobile: ~30px
+    Tablet: ~30px
+    Desktop: ~60px
+  font-family: fenway-park-jf, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  LTC Caslon Pro Regular, body for all formats
+    Mobile: ~18px
+    Tablet: ~18px
+    Desktop: ~24px
+  font-family: ltc-caslon-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+
+  Omnes Cyrillic Narrow ExtraLight, captions/buttons before click for all formats
+    Mobile: ~14px
+    Tablet: ~12px
+    Desktop: ~22px
+  font-family: omnes-cyrillic-narrow, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+
+  Omnes Cyrillic Narrow Regular, captions/buttons on/after click for all formats
+    Mobile: none as yet
+    Tablet: ~12px
+    Desktop: ~22px
+  font-family: omnes-cyrillic-narrow, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+
+
+  Adobe Caslon Pro Bold, for tablet and desktop blockquotes
+    Mobile: none as yet
+    Tablet: ~15px
+    Desktop: ~40px
+  font-family: adobe-caslon-pro, serif;
+  font-weight: 700;
+  font-style: normal;
+
+ */

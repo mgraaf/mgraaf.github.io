@@ -107,8 +107,8 @@ a:link {
   float: left;
   margin: 5px;
   padding: 30px;
-  /* Background color: SET */
-  background-color: red;
+  /* Background color: Cream */
+  background-color: #FFEDCB;
 }
 
 .project-three h2 {
@@ -142,8 +142,8 @@ a:link {
 }
 
 .project-three a:hover {
-  /*TEMPORARY Miss Fisher Gold */
-  color: #FFCC00;
+  /* Oxblood */
+  color: #C3000F;
 }
 
 
