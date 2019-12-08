@@ -101,6 +101,54 @@ a:link {
 
 
 
+.project-three {
+  width: 350px;
+  height: 600px;
+  float: left;
+  margin: 5px;
+  padding: 30px;
+  /* Background color: SET */
+  background-color: red;
+}
+
+.project-three h2 {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.project-three h3 {
+  /* Blambot FX Pro Heavy Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 5px;
+}
+
+.project-three li {
+  /* Blambot FX Pro Light Regular */
+  font-family: "blambot-fx-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.project-three li:hover {
+  /* Miss Fisher Gold */
+  color: #FFCC00;
+}
+
+.project-three a:hover {
+  /*TEMPORARY Miss Fisher Gold */
+  color: #FFCC00;
+}
+
+
+
+
 .exercises {
   width: 350px;
   height: 600px;
