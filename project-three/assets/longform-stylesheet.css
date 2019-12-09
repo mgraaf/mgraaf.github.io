@@ -42,7 +42,8 @@ h1 {
 }
 
 #line-one {
-  color: white;
+  /* Ivory */
+  color: #FFEDCB;
 }
 
 #line-two, #line-three {
