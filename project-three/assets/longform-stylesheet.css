@@ -100,10 +100,40 @@ p {
 
 /* iPad Media Query */
 @media only screen and (min-width:500px) and (max-width:960px) {
+  body {
+    background-color: red;
+  }
+
+  .everything {
+
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+
+    padding-bottom: 30px;
+  }
 }
 
 /* Desktop Media Query */
 @media only screen and (min-width:960px) {
+  body {
+    background-color: green;
+  }
+
+  .everything {
+
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+
+    padding-bottom: 30px;
+  }
 }
 
 
